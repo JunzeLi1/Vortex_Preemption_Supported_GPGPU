@@ -1,0 +1,66 @@
+diff --git a/sim/simx/types.h b/sim/simx/types.h
+index e6904b1..e368732 100644
+--- a/sim/simx/types.h
++++ b/sim/simx/types.h
+@@ -479,6 +479,61 @@ inline std::ostream &operator<<(std::ostream &os, const CsrType& type) {
+ 
+ ///////////////////////////////////////////////////////////////////////////////
+ 
++enum class ExcCause : uint32_t {
++  None                = 0xffffffffu,
++
++  InstrAddrMisaligned = 0,
++  InstrAccessFault    = 1,
++  IllegalInstr        = 2,
++  Breakpoint          = 3,
++  LoadAddrMisaligned  = 4,
++  LoadAccessFault     = 5,
++  StoreAddrMisaligned = 6,
++  StoreAccessFault    = 7,
++  EcallFromUMode      = 8,
++  EcallFromSMode      = 9,
++  EcallFromMMode      = 11,
++  InstrPageFault      = 12,
++  LoadPageFault       = 13,
++  StorePageFault      = 15,
++  GpuSyntheticFault   = 0x100
++};
++
++inline std::ostream &operator<<(std::ostream &os, const ExcCause& cause) {
++  switch (cause) {
++  case ExcCause::None:                os << "None"; break;
++  case ExcCause::InstrAddrMisaligned: os << "InstrAddrMisaligned"; break;
++  case ExcCause::InstrAccessFault:    os << "InstrAccessFault"; break;
++  case ExcCause::IllegalInstr:        os << "IllegalInstr"; break;
++  case ExcCause::Breakpoint:          os << "Breakpoint"; break;
++  case ExcCause::LoadAddrMisaligned:  os << "LoadAddrMisaligned"; break;
++  case ExcCause::LoadAccessFault:     os << "LoadAccessFault"; break;
++  case ExcCause::StoreAddrMisaligned: os << "StoreAddrMisaligned"; break;
++  case ExcCause::StoreAccessFault:    os << "StoreAccessFault"; break;
++  case ExcCause::EcallFromUMode:      os << "EcallFromUMode"; break;
++  case ExcCause::EcallFromSMode:      os << "EcallFromSMode"; break;
++  case ExcCause::EcallFromMMode:      os << "EcallFromMMode"; break;
++  case ExcCause::InstrPageFault:      os << "InstrPageFault"; break;
++  case ExcCause::LoadPageFault:       os << "LoadPageFault"; break;
++  case ExcCause::StorePageFault:      os << "StorePageFault"; break;
++  case ExcCause::GpuSyntheticFault:   os << "GpuSyntheticFault"; break;
++  default:
++    assert(false);
++  }
++  return os;
++}
++
++namespace csr {
++  static constexpr uint32_t SSTATUS  = 0x100;
++  static constexpr uint32_t STVEC    = 0x105;
++  static constexpr uint32_t SSCRATCH = 0x140;
++  static constexpr uint32_t SEPC     = 0x141;
++  static constexpr uint32_t SCAUSE   = 0x142;
++  static constexpr uint32_t STVAL    = 0x143;
++}
++
++///////////////////////////////////////////////////////////////////////////////
++
+ enum class VsetType {
+   VSETVLI,
+   VSETIVLI,

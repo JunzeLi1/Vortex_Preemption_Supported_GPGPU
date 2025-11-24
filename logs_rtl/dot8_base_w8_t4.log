@@ -1,0 +1,77 @@
+make: Entering directory '/home/andyl/vortex/tests/regressions/dot8_base'
+LD_LIBRARY_PATH=/home/andyl/vortex/runtime: VORTEX_DRIVER=rtlsim ./dot8_base -n 256
+open device connection
+CONFIGS: num_threads=4, num_warps=8, num_cores=4, num_clusters=1, socket_size=4, local_mem_base=0xffff0000, num_barriers=4
+data type: float
+matrix size: 256x256
+allocate device memory
+A_addr=0x10000
+B_addr=0x50000
+C_addr=0x90000
+upload matrix A buffer
+upload matrix B buffer
+Upload kernel binary
+upload kernel argument
+start device
+wait for completion
+Elapsed time: 2.79043e+06 ms
+download destination buffer
+verify result
+cleanup
+PERF: core0: scheduler idle=23847864 (68%)
+PERF: core0: scheduler stalls=8009475 (22%)
+PERF: core0: ibuffer stalls=1088068 (3%)
+PERF: core0: scoreboard stalls=18061755 (51%) (alu=35%, lsu=64%, csrs=0%, wctl=0%, fpu=0%)
+PERF: core0: operands stalls=16504 (0%)
+PERF: core0: ifetches=7497740
+PERF: core0: ifetch latency=5 cycles
+PERF: core0: loads=8504048
+PERF: core0: load latency=28 cycles
+PERF: core0: stores=83226
+PERF: core0: instrs=29989805, cycles=34975674, IPC=0.857448
+PERF: core1: scheduler idle=23925765 (68%)
+PERF: core1: scheduler stalls=7958378 (22%)
+PERF: core1: ibuffer stalls=1090020 (3%)
+PERF: core1: scoreboard stalls=18058499 (51%) (alu=35%, lsu=64%, csrs=0%, wctl=0%, fpu=0%)
+PERF: core1: operands stalls=16504 (0%)
+PERF: core1: ifetches=7497740
+PERF: core1: ifetch latency=5 cycles
+PERF: core1: loads=8504048
+PERF: core1: load latency=28 cycles
+PERF: core1: stores=83226
+PERF: core1: instrs=29989805, cycles=34975673, IPC=0.857448
+PERF: core2: scheduler idle=26330411 (72%)
+PERF: core2: scheduler stalls=7049319 (19%)
+PERF: core2: ibuffer stalls=1156800 (3%)
+PERF: core2: scoreboard stalls=18605955 (51%) (alu=36%, lsu=63%, csrs=0%, wctl=0%, fpu=0%)
+PERF: core2: operands stalls=16504 (0%)
+PERF: core2: ifetches=7497740
+PERF: core2: ifetch latency=5 cycles
+PERF: core2: loads=8504048
+PERF: core2: load latency=30 cycles
+PERF: core2: stores=83226
+PERF: core2: instrs=29989805, cycles=36271886, IPC=0.826806
+PERF: core3: scheduler idle=25603266 (71%)
+PERF: core3: scheduler stalls=7379495 (20%)
+PERF: core3: ibuffer stalls=1105304 (3%)
+PERF: core3: scoreboard stalls=18311867 (50%) (alu=36%, lsu=63%, csrs=0%, wctl=0%, fpu=0%)
+PERF: core3: operands stalls=16504 (0%)
+PERF: core3: ifetches=7497740
+PERF: core3: ifetch latency=5 cycles
+PERF: core3: loads=8504048
+PERF: core3: load latency=29 cycles
+PERF: core3: stores=83226
+PERF: core3: instrs=29989805, cycles=35978270, IPC=0.833553
+PERF: scheduler idle=99707306 (70%)
+PERF: scheduler stalls=30396667 (21%)
+PERF: ibuffer stalls=4440192 (3%)
+PERF: scoreboard stalls=73038076 (51%) (alu=35%, lsu=64%, csrs=0%, wctl=0%, fpu=0%)
+PERF: operands stalls=66016 (0%)
+PERF: ifetches=29990960
+PERF: loads=34016192
+PERF: stores=332904
+PERF: ifetch latency=5 cycles
+PERF: load latency=29 cycles
+PERF: instrs=119959220, cycles=36271886, IPC=3.307223
+PASSED!
+make: Leaving directory '/home/andyl/vortex/tests/regressions/dot8_base'

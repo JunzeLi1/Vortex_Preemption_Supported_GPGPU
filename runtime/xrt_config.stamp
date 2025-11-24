@@ -1,0 +1,1 @@
+-std=c++17 -Wall -Wextra -Wfatal-errors -I/home/andyl/vortex/runtime/include -I/home/andyl/vortex/hw -I/include -I/home/andyl/vortex/sim/common -I/home/andyl/vortex/runtime/common -DXLEN_32 -fPIC -DXRTSIM -I/home/andyl/vortex/sim/xrtsim -O2 -DNDEBUG

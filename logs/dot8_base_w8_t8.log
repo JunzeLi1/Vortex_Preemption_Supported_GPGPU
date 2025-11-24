@@ -1,0 +1,191 @@
+make: Entering directory '/home/andyl/vortex/tests/regressions/dot8_base'
+LD_LIBRARY_PATH=/home/andyl/vortex/runtime: VORTEX_DRIVER=simx ./dot8_base -n256
+open device connection
+CONFIGS: num_threads=8, num_warps=8, num_cores=4, num_clusters=1, socket_size=4, local_mem_base=0xffff0000, num_barriers=4
+[VXDRV] DEV_OPEN: hdevice=0x558f44393fd0
+[VXDRV] DCR_WRITE: hdevice=0x558f44393fd0, addr=0x1, value=0x80000000
+[VXDRV] DCR_WRITE: hdevice=0x558f44393fd0, addr=0x2, value=0x0
+[VXDRV] DCR_WRITE: hdevice=0x558f44393fd0, addr=0x3, value=0x0
+[VXDRV] DCR_WRITE: hdevice=0x558f44393fd0, addr=0x4, value=0x0
+[VXDRV] DCR_WRITE: hdevice=0x558f44393fd0, addr=0x5, value=0x0
+data type: float
+matrix size: 256x256
+allocate device memory
+[VXDRV] [RT:mem_alloc] size: 0x40000, asize, 0x40000,flag : 0x1
+[VXDRV] MEM_ALLOC: hdevice=0x558f44393fd0, size=262144, flags=0x1, hbuffer=0x558f44548ac0
+[VXDRV] MEM_ADDRESS: hbuffer=0x558f44548ac0, address=0x10000
+[VXDRV] [RT:mem_alloc] size: 0x40000, asize, 0x40000,flag : 0x1
+[VXDRV] MEM_ALLOC: hdevice=0x558f44393fd0, size=262144, flags=0x1, hbuffer=0x558f44548bb0
+[VXDRV] MEM_ADDRESS: hbuffer=0x558f44548bb0, address=0x50000
+[VXDRV] [RT:mem_alloc] size: 0x40000, asize, 0x40000,flag : 0x2
+[VXDRV] MEM_ALLOC: hdevice=0x558f44393fd0, size=262144, flags=0x2, hbuffer=0x558f44548c60
+[VXDRV] MEM_ADDRESS: hbuffer=0x558f44548c60, address=0x90000
+A_addr=0x10000
+B_addr=0x50000
+C_addr=0x90000
+upload matrix A buffer
+[VXDRV] COPY_TO_DEV: hbuffer=0x558f44548ac0, host_addr=0x7f2eeee9b010, dst_offset=0, size=262144
+upload matrix B buffer
+[VXDRV] COPY_TO_DEV: hbuffer=0x558f44548bb0, host_addr=0x7f2eeee5a010, dst_offset=0, size=262144
+Upload kernel binary
+[VXDRV] [RT:mem_reserve] addr: 0x80000000, asize:0x72c4, size: 0x72c4
+[VXDRV] MEM_RESERVE: hdevice=0x558f44393fd0, address=0x80000000, size=29380, flags=0x0, hbuffer=0x558f445d4730
+[VXDRV] MEM_ACCESS: hbuffer=0x558f445d4730, offset=0, size=29352, flags=1
+[VXDRV] MEM_ACCESS: hbuffer=0x558f445d4730, offset=29352, size=28, flags=3
+[VXDRV] COPY_TO_DEV: hbuffer=0x558f445d4730, host_addr=0x558f445cd3f0, dst_offset=0, size=29352
+upload kernel argument
+[VXDRV] [RT:mem_alloc] size: 0x28, asize, 0x28,flag : 0x1
+[VXDRV] MEM_ALLOC: hdevice=0x558f44393fd0, size=40, flags=0x1, hbuffer=0x558f445cb4f0
+[VXDRV] COPY_TO_DEV: hbuffer=0x558f445cb4f0, host_addr=0x558f42e881a0, dst_offset=0, size=40
+start device
+[VXDRV] DCR_WRITE: hdevice=0x558f44393fd0, addr=0x5, value=0x1
+[VXDRV] START: hdevice=0x558f44393fd0, hkernel=0x558f445d4730, harguments=0x558f445cb4f0
+wait for completion
+[VXDRV] READY_WAIT: hdevice=0x558f44393fd0, timeout=86400000
+Elapsed time: 1.58412e+06 ms
+download destination buffer
+[VXDRV] COPY_FROM_DEV: hbuffer=0x558f44548c60, host_addr=0x7f2eeee19010, src_offset=0, size=262144
+verify result
+cleanup
+[VXDRV] MEM_FREE: hbuffer=0x558f44548ac0
+[VXDRV] MEM_FREE: hbuffer=0x558f44548bb0
+[VXDRV] MEM_FREE: hbuffer=0x558f44548c60
+[VXDRV] MEM_FREE: hbuffer=0x558f445d4730
+[VXDRV] MEM_FREE: hbuffer=0x558f445cb4f0
+[VXDRV] DEV_CAPS: hdevice=0x558f44393fd0, caps_id=3, value=4
+[VXDRV] DEV_CAPS: hdevice=0x558f44393fd0, caps_id=7, value=220126515488
+[VXDRV] DEV_CAPS: hdevice=0x558f44393fd0, caps_id=8, value=2
+[VXDRV] MPM_QUERY: hdevice=0x558f44393fd0, addr=0xb00, core_id=0, value=0x12f19c9
+[VXDRV] MPM_QUERY: hdevice=0x558f44393fd0, addr=0xb02, core_id=0, value=0x1c9b61c
+[VXDRV] MPM_QUERY: hdevice=0x558f44393fd0, addr=0xb03, core_id=0, value=0xf5e23b
+PERF: core0: scheduler idle=16114235 (81%)
+[VXDRV] MPM_QUERY: hdevice=0x558f44393fd0, addr=0xb04, core_id=0, value=0x0
+PERF: core0: scheduler stalls=0 (0%)
+[VXDRV] MPM_QUERY: hdevice=0x558f44393fd0, addr=0xb05, core_id=0, value=0xcabd54
+PERF: core0: ibuffer stalls=13286740 (66%)
+[VXDRV] MPM_QUERY: hdevice=0x558f44393fd0, addr=0xb06, core_id=0, value=0xf5186c
+[VXDRV] MPM_QUERY: hdevice=0x558f44393fd0, addr=0xb08, core_id=0, value=0x435f1f
+[VXDRV] MPM_QUERY: hdevice=0x558f44393fd0, addr=0xb09, core_id=0, value=0x1ca
+[VXDRV] MPM_QUERY: hdevice=0x558f44393fd0, addr=0xb0a, core_id=0, value=0x91f5da9
+[VXDRV] MPM_QUERY: hdevice=0x558f44393fd0, addr=0xb13, core_id=0, value=0x0
+[VXDRV] MPM_QUERY: hdevice=0x558f44393fd0, addr=0xb14, core_id=0, value=0x0
+[VXDRV] MPM_QUERY: hdevice=0x558f44393fd0, addr=0xb0c, core_id=0, value=0x54
+[VXDRV] MPM_QUERY: hdevice=0x558f44393fd0, addr=0xb0d, core_id=0, value=0x0
+PERF: core0: scoreboard stalls=16062572 (80%) (alu=2%, lsu=97%, csrs=0%, wctl=0%, fpu=0%)
+[VXDRV] MPM_QUERY: hdevice=0x558f44393fd0, addr=0xb07, core_id=0, value=0x2078
+PERF: core0: operands stalls=8312 (0%)
+[VXDRV] MPM_QUERY: hdevice=0x558f44393fd0, addr=0xb0e, core_id=0, value=0x39380a
+PERF: core0: ifetches=3749898
+[VXDRV] MPM_QUERY: hdevice=0x558f44393fd0, addr=0xb11, core_id=0, value=0x2e1daab
+PERF: core0: ifetch latency=12 cycles
+[VXDRV] MPM_QUERY: hdevice=0x558f44393fd0, addr=0xb0f, core_id=0, value=0x81c5d0
+PERF: core0: loads=8504784
+[VXDRV] MPM_QUERY: hdevice=0x558f44393fd0, addr=0xb12, core_id=0, value=0x128b169f
+PERF: core0: load latency=36 cycles
+[VXDRV] MPM_QUERY: hdevice=0x558f44393fd0, addr=0xb10, core_id=0, value=0x149d9
+PERF: core0: stores=84441
+PERF: core0: instrs=29996572, cycles=19864009, IPC=1.510097
+[VXDRV] MPM_QUERY: hdevice=0x558f44393fd0, addr=0xb00, core_id=1, value=0x12f19c7
+[VXDRV] MPM_QUERY: hdevice=0x558f44393fd0, addr=0xb02, core_id=1, value=0x1c9b61c
+[VXDRV] MPM_QUERY: hdevice=0x558f44393fd0, addr=0xb03, core_id=1, value=0xf5e239
+PERF: core1: scheduler idle=16114233 (81%)
+[VXDRV] MPM_QUERY: hdevice=0x558f44393fd0, addr=0xb04, core_id=1, value=0x0
+PERF: core1: scheduler stalls=0 (0%)
+[VXDRV] MPM_QUERY: hdevice=0x558f44393fd0, addr=0xb05, core_id=1, value=0xcaa118
+PERF: core1: ibuffer stalls=13279512 (66%)
+[VXDRV] MPM_QUERY: hdevice=0x558f44393fd0, addr=0xb06, core_id=1, value=0xf519b7
+[VXDRV] MPM_QUERY: hdevice=0x558f44393fd0, addr=0xb08, core_id=1, value=0x43229f
+[VXDRV] MPM_QUERY: hdevice=0x558f44393fd0, addr=0xb09, core_id=1, value=0x1f0
+[VXDRV] MPM_QUERY: hdevice=0x558f44393fd0, addr=0xb0a, core_id=1, value=0x9103b4a
+[VXDRV] MPM_QUERY: hdevice=0x558f44393fd0, addr=0xb13, core_id=1, value=0x0
+[VXDRV] MPM_QUERY: hdevice=0x558f44393fd0, addr=0xb14, core_id=1, value=0x0
+[VXDRV] MPM_QUERY: hdevice=0x558f44393fd0, addr=0xb0c, core_id=1, value=0x54
+[VXDRV] MPM_QUERY: hdevice=0x558f44393fd0, addr=0xb0d, core_id=1, value=0x0
+PERF: core1: scoreboard stalls=16062903 (80%) (alu=2%, lsu=97%, csrs=0%, wctl=0%, fpu=0%)
+[VXDRV] MPM_QUERY: hdevice=0x558f44393fd0, addr=0xb07, core_id=1, value=0x2078
+PERF: core1: operands stalls=8312 (0%)
+[VXDRV] MPM_QUERY: hdevice=0x558f44393fd0, addr=0xb0e, core_id=1, value=0x39380a
+PERF: core1: ifetches=3749898
+[VXDRV] MPM_QUERY: hdevice=0x558f44393fd0, addr=0xb11, core_id=1, value=0x2e2f850
+PERF: core1: ifetch latency=12 cycles
+[VXDRV] MPM_QUERY: hdevice=0x558f44393fd0, addr=0xb0f, core_id=1, value=0x81c5d0
+PERF: core1: loads=8504784
+[VXDRV] MPM_QUERY: hdevice=0x558f44393fd0, addr=0xb12, core_id=1, value=0x128fd271
+PERF: core1: load latency=36 cycles
+[VXDRV] MPM_QUERY: hdevice=0x558f44393fd0, addr=0xb10, core_id=1, value=0x149d9
+PERF: core1: stores=84441
+PERF: core1: instrs=29996572, cycles=19864007, IPC=1.510097
+[VXDRV] MPM_QUERY: hdevice=0x558f44393fd0, addr=0xb00, core_id=2, value=0x12f19c8
+[VXDRV] MPM_QUERY: hdevice=0x558f44393fd0, addr=0xb02, core_id=2, value=0x1c9b61c
+[VXDRV] MPM_QUERY: hdevice=0x558f44393fd0, addr=0xb03, core_id=2, value=0xf5e23a
+PERF: core2: scheduler idle=16114234 (81%)
+[VXDRV] MPM_QUERY: hdevice=0x558f44393fd0, addr=0xb04, core_id=2, value=0x0
+PERF: core2: scheduler stalls=0 (0%)
+[VXDRV] MPM_QUERY: hdevice=0x558f44393fd0, addr=0xb05, core_id=2, value=0xca3723
+PERF: core2: ibuffer stalls=13252387 (66%)
+[VXDRV] MPM_QUERY: hdevice=0x558f44393fd0, addr=0xb06, core_id=2, value=0xf4e49c
+[VXDRV] MPM_QUERY: hdevice=0x558f44393fd0, addr=0xb08, core_id=2, value=0x42fed2
+[VXDRV] MPM_QUERY: hdevice=0x558f44393fd0, addr=0xb09, core_id=2, value=0x1fa
+[VXDRV] MPM_QUERY: hdevice=0x558f44393fd0, addr=0xb0a, core_id=2, value=0x919be9c
+[VXDRV] MPM_QUERY: hdevice=0x558f44393fd0, addr=0xb13, core_id=2, value=0x0
+[VXDRV] MPM_QUERY: hdevice=0x558f44393fd0, addr=0xb14, core_id=2, value=0x0
+[VXDRV] MPM_QUERY: hdevice=0x558f44393fd0, addr=0xb0c, core_id=2, value=0x54
+[VXDRV] MPM_QUERY: hdevice=0x558f44393fd0, addr=0xb0d, core_id=2, value=0x0
+PERF: core2: scoreboard stalls=16049308 (80%) (alu=2%, lsu=97%, csrs=0%, wctl=0%, fpu=0%)
+[VXDRV] MPM_QUERY: hdevice=0x558f44393fd0, addr=0xb07, core_id=2, value=0x2078
+PERF: core2: operands stalls=8312 (0%)
+[VXDRV] MPM_QUERY: hdevice=0x558f44393fd0, addr=0xb0e, core_id=2, value=0x39380a
+PERF: core2: ifetches=3749898
+[VXDRV] MPM_QUERY: hdevice=0x558f44393fd0, addr=0xb11, core_id=2, value=0x2e5ed52
+PERF: core2: ifetch latency=12 cycles
+[VXDRV] MPM_QUERY: hdevice=0x558f44393fd0, addr=0xb0f, core_id=2, value=0x81c5d0
+PERF: core2: loads=8504784
+[VXDRV] MPM_QUERY: hdevice=0x558f44393fd0, addr=0xb12, core_id=2, value=0x12835ae8
+PERF: core2: load latency=36 cycles
+[VXDRV] MPM_QUERY: hdevice=0x558f44393fd0, addr=0xb10, core_id=2, value=0x149d9
+PERF: core2: stores=84441
+PERF: core2: instrs=29996572, cycles=19864008, IPC=1.510097
+[VXDRV] MPM_QUERY: hdevice=0x558f44393fd0, addr=0xb00, core_id=3, value=0x12f19c6
+[VXDRV] MPM_QUERY: hdevice=0x558f44393fd0, addr=0xb02, core_id=3, value=0x1c9b61c
+[VXDRV] MPM_QUERY: hdevice=0x558f44393fd0, addr=0xb03, core_id=3, value=0xf5e238
+PERF: core3: scheduler idle=16114232 (81%)
+[VXDRV] MPM_QUERY: hdevice=0x558f44393fd0, addr=0xb04, core_id=3, value=0x0
+PERF: core3: scheduler stalls=0 (0%)
+[VXDRV] MPM_QUERY: hdevice=0x558f44393fd0, addr=0xb05, core_id=3, value=0xca883e
+PERF: core3: ibuffer stalls=13273150 (66%)
+[VXDRV] MPM_QUERY: hdevice=0x558f44393fd0, addr=0xb06, core_id=3, value=0xf509c6
+[VXDRV] MPM_QUERY: hdevice=0x558f44393fd0, addr=0xb08, core_id=3, value=0x432426
+[VXDRV] MPM_QUERY: hdevice=0x558f44393fd0, addr=0xb09, core_id=3, value=0x1e2
+[VXDRV] MPM_QUERY: hdevice=0x558f44393fd0, addr=0xb0a, core_id=3, value=0x923c0ab
+[VXDRV] MPM_QUERY: hdevice=0x558f44393fd0, addr=0xb13, core_id=3, value=0x0
+[VXDRV] MPM_QUERY: hdevice=0x558f44393fd0, addr=0xb14, core_id=3, value=0x0
+[VXDRV] MPM_QUERY: hdevice=0x558f44393fd0, addr=0xb0c, core_id=3, value=0x54
+[VXDRV] MPM_QUERY: hdevice=0x558f44393fd0, addr=0xb0d, core_id=3, value=0x0
+PERF: core3: scoreboard stalls=16058822 (80%) (alu=2%, lsu=97%, csrs=0%, wctl=0%, fpu=0%)
+[VXDRV] MPM_QUERY: hdevice=0x558f44393fd0, addr=0xb07, core_id=3, value=0x2078
+PERF: core3: operands stalls=8312 (0%)
+[VXDRV] MPM_QUERY: hdevice=0x558f44393fd0, addr=0xb0e, core_id=3, value=0x39380a
+PERF: core3: ifetches=3749898
+[VXDRV] MPM_QUERY: hdevice=0x558f44393fd0, addr=0xb11, core_id=3, value=0x2e27d66
+PERF: core3: ifetch latency=12 cycles
+[VXDRV] MPM_QUERY: hdevice=0x558f44393fd0, addr=0xb0f, core_id=3, value=0x81c5d0
+PERF: core3: loads=8504784
+[VXDRV] MPM_QUERY: hdevice=0x558f44393fd0, addr=0xb12, core_id=3, value=0x127f1404
+PERF: core3: load latency=36 cycles
+[VXDRV] MPM_QUERY: hdevice=0x558f44393fd0, addr=0xb10, core_id=3, value=0x149d9
+PERF: core3: stores=84441
+PERF: core3: instrs=29996572, cycles=19864006, IPC=1.510097
+PERF: scheduler idle=64456934 (81%)
+PERF: scheduler stalls=0 (0%)
+PERF: ibuffer stalls=53091789 (66%)
+PERF: scoreboard stalls=64233605 (80%) (alu=2%, lsu=97%, csrs=0%, wctl=0%, fpu=0%)
+PERF: operands stalls=33248 (0%)
+PERF: ifetches=14999592
+PERF: loads=34019136
+PERF: stores=337764
+PERF: ifetch latency=12 cycles
+PERF: load latency=36 cycles
+PERF: instrs=119986288, cycles=19864009, IPC=6.040386
+[VXDRV] DEV_CLOSE: hdevice=0x558f44393fd0
+PASSED!
+make: Leaving directory '/home/andyl/vortex/tests/regressions/dot8_base'

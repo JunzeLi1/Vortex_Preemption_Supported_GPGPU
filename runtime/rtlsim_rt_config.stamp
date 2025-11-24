@@ -1,0 +1,1 @@
+-std=c++17 -Wall -Wextra -pedantic -Wfatal-errors -I/home/andyl/vortex/runtime/include -I/home/andyl/vortex/hw -I/home/andyl/vortex/sim/rtlsim -I/home/andyl/vortex/sim/common -I/home/andyl/vortex/runtime/common -DXLEN_32 -fPIC -DEXT_TCU_ENABLE -DTCU_BHF -DNUM_CORES=4 -DNUM_WARPS=8 -DNUM_THREADS=8 -DPERF_ENABLE -DNUM_CORES=4 -DNUM_WARPS=8 -DNUM_THREADS=8 -DPERF_ENABLE -O2 -DNDEBUG

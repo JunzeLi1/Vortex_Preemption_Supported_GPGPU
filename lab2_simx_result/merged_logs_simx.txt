@@ -1,0 +1,1008 @@
+CONFIGS=-DEXT_TCU_ENABLE -DNUM_CORES=4 -DNUM_WARPS=4 -DNUM_THREADS=4 -DPERF_ENABLE
+Running: CONFIGS="-DEXT_TCU_ENABLE -DNUM_CORES=4 -DNUM_WARPS=4 -DNUM_THREADS=4 -DPERF_ENABLE" make -C ./ci/../runtime/simx > /dev/null
+Running: make -C "./ci/../tests/regression/sgemm_tcu" run-simx
+make: Entering directory '/home/andyl/vortex/tests/regression/sgemm_tcu'
+LD_LIBRARY_PATH=/home/andyl/vortex/runtime: VORTEX_DRIVER=simx ./sgemm_tcu 
+open device connection
+input data type: bf16 (id=2)
+output data type: fp32 (id=0)
+WMMA Core Dimension: M=2, N=2, K=2
+WMMA Tile Dimension: M=8, N=4, K=8
+matrix A: 32x32
+matrix B: 32x256
+matrix C: 32x256
+allocate device memory
+A_addr=0x10000
+B_addr=0x11000
+C_addr=0x15000
+upload matrix A buffer
+upload matrix B buffer
+upload program
+upload kernel argument
+start device
+wait for completion
+Elapsed time: 712 ms
+download destination buffer
+verify result
+cleanup
+PERF: core0: scheduler idle=128907 (81%)
+PERF: core0: scheduler stalls=0 (0%)
+PERF: core0: ibuffer stalls=21088 (13%)
+PERF: core0: scoreboard stalls=38763 (24%) (alu=6%, lsu=92%, csrs=0%, wctl=0%, fpu=0%, tcu=0%)
+PERF: core0: operands stalls=4743 (3%)
+PERF: core0: ifetches=28734
+PERF: core0: ifetch latency=14 cycles
+PERF: core0: loads=19403
+PERF: core0: load latency=27 cycles
+PERF: core0: stores=4340
+PERF: core0: instrs=113782, cycles=157517, IPC=0.722347
+PERF: core1: scheduler idle=128906 (81%)
+PERF: core1: scheduler stalls=0 (0%)
+PERF: core1: ibuffer stalls=23051 (14%)
+PERF: core1: scoreboard stalls=53799 (34%) (alu=7%, lsu=92%, csrs=0%, wctl=0%, fpu=0%, tcu=0%)
+PERF: core1: operands stalls=4743 (3%)
+PERF: core1: ifetches=28734
+PERF: core1: ifetch latency=14 cycles
+PERF: core1: loads=19403
+PERF: core1: load latency=30 cycles
+PERF: core1: stores=4340
+PERF: core1: instrs=113782, cycles=157516, IPC=0.722352
+PERF: core2: scheduler idle=133069 (82%)
+PERF: core2: scheduler stalls=0 (0%)
+PERF: core2: ibuffer stalls=27754 (17%)
+PERF: core2: scoreboard stalls=44869 (27%) (alu=5%, lsu=93%, csrs=0%, wctl=0%, fpu=0%, tcu=0%)
+PERF: core2: operands stalls=4743 (2%)
+PERF: core2: ifetches=28734
+PERF: core2: ifetch latency=14 cycles
+PERF: core2: loads=19403
+PERF: core2: load latency=27 cycles
+PERF: core2: stores=4340
+PERF: core2: instrs=113782, cycles=161679, IPC=0.703753
+PERF: core3: scheduler idle=132196 (82%)
+PERF: core3: scheduler stalls=0 (0%)
+PERF: core3: ibuffer stalls=22917 (14%)
+PERF: core3: scoreboard stalls=53174 (33%) (alu=4%, lsu=94%, csrs=0%, wctl=0%, fpu=0%, tcu=0%)
+PERF: core3: operands stalls=4743 (2%)
+PERF: core3: ifetches=28734
+PERF: core3: ifetch latency=14 cycles
+PERF: core3: loads=19403
+PERF: core3: load latency=28 cycles
+PERF: core3: stores=4340
+PERF: core3: instrs=113782, cycles=160806, IPC=0.707573
+PERF: scheduler idle=523078 (82%)
+PERF: scheduler stalls=0 (0%)
+PERF: ibuffer stalls=94810 (14%)
+PERF: scoreboard stalls=190605 (29%) (alu=5%, lsu=93%, csrs=0%, wctl=0%, fpu=0%, tcu=0%)
+PERF: operands stalls=18972 (2%)
+PERF: ifetches=114936
+PERF: loads=77612
+PERF: stores=17360
+PERF: ifetch latency=14 cycles
+PERF: load latency=28 cycles
+PERF: instrs=455128, cycles=161679, IPC=2.815010
+PASSED!
+make: Leaving directory '/home/andyl/vortex/tests/regression/sgemm_tcu'
+CONFIGS=-DEXT_TCU_ENABLE -DNUM_CORES=4 -DNUM_WARPS=4 -DNUM_THREADS=8 -DPERF_ENABLE
+Running: CONFIGS="-DEXT_TCU_ENABLE -DNUM_CORES=4 -DNUM_WARPS=4 -DNUM_THREADS=8 -DPERF_ENABLE" make -C ./ci/../runtime/simx > /dev/null
+Running: make -C "./ci/../tests/regression/sgemm_tcu" run-simx
+make: Entering directory '/home/andyl/vortex/tests/regression/sgemm_tcu'
+LD_LIBRARY_PATH=/home/andyl/vortex/runtime: VORTEX_DRIVER=simx ./sgemm_tcu 
+open device connection
+input data type: bf16 (id=2)
+output data type: fp32 (id=0)
+WMMA Core Dimension: M=4, N=2, K=2
+WMMA Tile Dimension: M=8, N=8, K=16
+matrix A: 32x32
+matrix B: 32x256
+matrix C: 32x256
+allocate device memory
+A_addr=0x10000
+B_addr=0x11000
+C_addr=0x15000
+upload matrix A buffer
+upload matrix B buffer
+upload program
+upload kernel argument
+start device
+wait for completion
+Elapsed time: 1286 ms
+download destination buffer
+verify result
+cleanup
+PERF: core0: scheduler idle=203609 (94%)
+PERF: core0: scheduler stalls=0 (0%)
+PERF: core0: ibuffer stalls=100374 (46%)
+PERF: core0: scoreboard stalls=136724 (63%) (alu=1%, lsu=98%, csrs=0%, wctl=0%, fpu=0%, tcu=0%)
+PERF: core0: operands stalls=2375 (1%)
+PERF: core0: ifetches=12350
+PERF: core0: ifetch latency=22 cycles
+PERF: core0: loads=16763
+PERF: core0: load latency=112 cycles
+PERF: core0: stores=6036
+PERF: core0: instrs=96174, cycles=215835, IPC=0.445590
+PERF: core1: scheduler idle=203610 (94%)
+PERF: core1: scheduler stalls=0 (0%)
+PERF: core1: ibuffer stalls=100448 (46%)
+PERF: core1: scoreboard stalls=137045 (63%) (alu=1%, lsu=98%, csrs=0%, wctl=0%, fpu=0%, tcu=0%)
+PERF: core1: operands stalls=2375 (1%)
+PERF: core1: ifetches=12350
+PERF: core1: ifetch latency=22 cycles
+PERF: core1: loads=16763
+PERF: core1: load latency=113 cycles
+PERF: core1: stores=6036
+PERF: core1: instrs=96174, cycles=215836, IPC=0.445588
+PERF: core2: scheduler idle=203608 (94%)
+PERF: core2: scheduler stalls=0 (0%)
+PERF: core2: ibuffer stalls=99605 (46%)
+PERF: core2: scoreboard stalls=148041 (68%) (alu=1%, lsu=98%, csrs=0%, wctl=0%, fpu=0%, tcu=0%)
+PERF: core2: operands stalls=2375 (1%)
+PERF: core2: ifetches=12350
+PERF: core2: ifetch latency=22 cycles
+PERF: core2: loads=16763
+PERF: core2: load latency=116 cycles
+PERF: core2: stores=6036
+PERF: core2: instrs=96174, cycles=215834, IPC=0.445592
+PERF: core3: scheduler idle=204628 (94%)
+PERF: core3: scheduler stalls=0 (0%)
+PERF: core3: ibuffer stalls=102541 (47%)
+PERF: core3: scoreboard stalls=148960 (68%) (alu=1%, lsu=98%, csrs=0%, wctl=0%, fpu=0%, tcu=0%)
+PERF: core3: operands stalls=2375 (1%)
+PERF: core3: ifetches=12350
+PERF: core3: ifetch latency=21 cycles
+PERF: core3: loads=16763
+PERF: core3: load latency=125 cycles
+PERF: core3: stores=6036
+PERF: core3: instrs=96174, cycles=216854, IPC=0.443497
+PERF: scheduler idle=815455 (94%)
+PERF: scheduler stalls=0 (0%)
+PERF: ibuffer stalls=402968 (46%)
+PERF: scoreboard stalls=570770 (66%) (alu=1%, lsu=98%, csrs=0%, wctl=0%, fpu=0%, tcu=0%)
+PERF: operands stalls=9500 (1%)
+PERF: ifetches=49400
+PERF: loads=67052
+PERF: stores=24144
+PERF: ifetch latency=21 cycles
+PERF: load latency=117 cycles
+PERF: instrs=384696, cycles=216854, IPC=1.773986
+PASSED!
+make: Leaving directory '/home/andyl/vortex/tests/regression/sgemm_tcu'
+CONFIGS=-DEXT_TCU_ENABLE -DNUM_CORES=4 -DNUM_WARPS=8 -DNUM_THREADS=4 -DPERF_ENABLE
+Running: CONFIGS="-DEXT_TCU_ENABLE -DNUM_CORES=4 -DNUM_WARPS=8 -DNUM_THREADS=4 -DPERF_ENABLE" make -C ./ci/../runtime/simx > /dev/null
+Running: make -C "./ci/../tests/regression/sgemm_tcu" run-simx
+make: Entering directory '/home/andyl/vortex/tests/regression/sgemm_tcu'
+LD_LIBRARY_PATH=/home/andyl/vortex/runtime: VORTEX_DRIVER=simx ./sgemm_tcu 
+open device connection
+input data type: bf16 (id=2)
+output data type: fp32 (id=0)
+WMMA Core Dimension: M=2, N=2, K=2
+WMMA Tile Dimension: M=8, N=4, K=8
+matrix A: 32x32
+matrix B: 32x256
+matrix C: 32x256
+allocate device memory
+A_addr=0x10000
+B_addr=0x11000
+C_addr=0x15000
+upload matrix A buffer
+upload matrix B buffer
+upload program
+upload kernel argument
+start device
+wait for completion
+Elapsed time: 973 ms
+download destination buffer
+verify result
+cleanup
+PERF: core0: scheduler idle=165271 (84%)
+PERF: core0: scheduler stalls=0 (0%)
+PERF: core0: ibuffer stalls=38487 (19%)
+PERF: core0: scoreboard stalls=83765 (43%) (alu=5%, lsu=94%, csrs=0%, wctl=0%, fpu=0%, tcu=0%)
+PERF: core0: operands stalls=4799 (2%)
+PERF: core0: ifetches=29702
+PERF: core0: ifetch latency=30 cycles
+PERF: core0: loads=19843
+PERF: core0: load latency=38 cycles
+PERF: core0: stores=5016
+PERF: core0: instrs=117475, cycles=194799, IPC=0.603058
+PERF: core1: scheduler idle=177024 (85%)
+PERF: core1: scheduler stalls=0 (0%)
+PERF: core1: ibuffer stalls=42849 (20%)
+PERF: core1: scoreboard stalls=86333 (41%) (alu=2%, lsu=97%, csrs=0%, wctl=0%, fpu=0%, tcu=0%)
+PERF: core1: operands stalls=4799 (2%)
+PERF: core1: ifetches=29702
+PERF: core1: ifetch latency=32 cycles
+PERF: core1: loads=19843
+PERF: core1: load latency=39 cycles
+PERF: core1: stores=5016
+PERF: core1: instrs=117474, cycles=206602, IPC=0.568600
+PERF: core2: scheduler idle=176441 (85%)
+PERF: core2: scheduler stalls=0 (0%)
+PERF: core2: ibuffer stalls=43213 (20%)
+PERF: core2: scoreboard stalls=66532 (32%) (alu=2%, lsu=97%, csrs=0%, wctl=0%, fpu=0%, tcu=0%)
+PERF: core2: operands stalls=4799 (2%)
+PERF: core2: ifetches=29702
+PERF: core2: ifetch latency=32 cycles
+PERF: core2: loads=19843
+PERF: core2: load latency=35 cycles
+PERF: core2: stores=5016
+PERF: core2: instrs=117474, cycles=206019, IPC=0.570210
+PERF: core3: scheduler idle=177334 (85%)
+PERF: core3: scheduler stalls=0 (0%)
+PERF: core3: ibuffer stalls=42172 (20%)
+PERF: core3: scoreboard stalls=63477 (30%) (alu=1%, lsu=98%, csrs=0%, wctl=0%, fpu=0%, tcu=0%)
+PERF: core3: operands stalls=4799 (2%)
+PERF: core3: ifetches=29702
+PERF: core3: ifetch latency=32 cycles
+PERF: core3: loads=19843
+PERF: core3: load latency=34 cycles
+PERF: core3: stores=5016
+PERF: core3: instrs=117474, cycles=206912, IPC=0.567749
+PERF: scheduler idle=696070 (85%)
+PERF: scheduler stalls=0 (0%)
+PERF: ibuffer stalls=166721 (20%)
+PERF: scoreboard stalls=300107 (36%) (alu=2%, lsu=96%, csrs=0%, wctl=0%, fpu=0%, tcu=0%)
+PERF: operands stalls=19196 (2%)
+PERF: ifetches=118808
+PERF: loads=79372
+PERF: stores=20064
+PERF: ifetch latency=32 cycles
+PERF: load latency=37 cycles
+PERF: instrs=469897, cycles=206912, IPC=2.270999
+PASSED!
+make: Leaving directory '/home/andyl/vortex/tests/regression/sgemm_tcu'
+CONFIGS=-DEXT_TCU_ENABLE -DNUM_CORES=4 -DNUM_WARPS=8 -DNUM_THREADS=8 -DPERF_ENABLE
+Running: CONFIGS="-DEXT_TCU_ENABLE -DNUM_CORES=4 -DNUM_WARPS=8 -DNUM_THREADS=8 -DPERF_ENABLE" make -C ./ci/../runtime/simx > /dev/null
+Running: make -C "./ci/../tests/regression/sgemm_tcu" run-simx
+make: Entering directory '/home/andyl/vortex/tests/regression/sgemm_tcu'
+LD_LIBRARY_PATH=/home/andyl/vortex/runtime: VORTEX_DRIVER=simx ./sgemm_tcu 
+open device connection
+input data type: bf16 (id=2)
+output data type: fp32 (id=0)
+WMMA Core Dimension: M=4, N=2, K=2
+WMMA Tile Dimension: M=8, N=8, K=16
+matrix A: 32x32
+matrix B: 32x256
+matrix C: 32x256
+allocate device memory
+A_addr=0x10000
+B_addr=0x11000
+C_addr=0x15000
+upload matrix A buffer
+upload matrix B buffer
+upload program
+upload kernel argument
+start device
+wait for completion
+Elapsed time: 1664 ms
+download destination buffer
+verify result
+cleanup
+PERF: core0: scheduler idle=261708 (95%)
+PERF: core0: scheduler stalls=0 (0%)
+PERF: core0: ibuffer stalls=105337 (38%)
+PERF: core0: scoreboard stalls=175963 (64%) (alu=0%, lsu=99%, csrs=0%, wctl=0%, fpu=0%, tcu=0%)
+PERF: core0: operands stalls=2431 (0%)
+PERF: core0: ifetches=13318
+PERF: core0: ifetch latency=57 cycles
+PERF: core0: loads=17635
+PERF: core0: load latency=132 cycles
+PERF: core0: stores=7384
+PERF: core0: instrs=103498, cycles=274902, IPC=0.376491
+PERF: core1: scheduler idle=261492 (95%)
+PERF: core1: scheduler stalls=0 (0%)
+PERF: core1: ibuffer stalls=102765 (37%)
+PERF: core1: scoreboard stalls=174998 (63%) (alu=0%, lsu=99%, csrs=0%, wctl=0%, fpu=0%, tcu=0%)
+PERF: core1: operands stalls=2431 (0%)
+PERF: core1: ifetches=13318
+PERF: core1: ifetch latency=57 cycles
+PERF: core1: loads=17635
+PERF: core1: load latency=136 cycles
+PERF: core1: stores=7384
+PERF: core1: instrs=103498, cycles=274686, IPC=0.376787
+PERF: core2: scheduler idle=261493 (95%)
+PERF: core2: scheduler stalls=0 (0%)
+PERF: core2: ibuffer stalls=100572 (36%)
+PERF: core2: scoreboard stalls=175702 (63%) (alu=0%, lsu=99%, csrs=0%, wctl=0%, fpu=0%, tcu=0%)
+PERF: core2: operands stalls=2431 (0%)
+PERF: core2: ifetches=13318
+PERF: core2: ifetch latency=57 cycles
+PERF: core2: loads=17635
+PERF: core2: load latency=141 cycles
+PERF: core2: stores=7384
+PERF: core2: instrs=103498, cycles=274687, IPC=0.376785
+PERF: core3: scheduler idle=261729 (95%)
+PERF: core3: scheduler stalls=0 (0%)
+PERF: core3: ibuffer stalls=101001 (36%)
+PERF: core3: scoreboard stalls=175693 (63%) (alu=0%, lsu=99%, csrs=0%, wctl=0%, fpu=0%, tcu=0%)
+PERF: core3: operands stalls=2431 (0%)
+PERF: core3: ifetches=13318
+PERF: core3: ifetch latency=57 cycles
+PERF: core3: loads=17635
+PERF: core3: load latency=135 cycles
+PERF: core3: stores=7384
+PERF: core3: instrs=103498, cycles=274923, IPC=0.376462
+PERF: scheduler idle=1046422 (95%)
+PERF: scheduler stalls=0 (0%)
+PERF: ibuffer stalls=409675 (37%)
+PERF: scoreboard stalls=702356 (63%) (alu=0%, lsu=99%, csrs=0%, wctl=0%, fpu=0%, tcu=0%)
+PERF: operands stalls=9724 (0%)
+PERF: ifetches=53272
+PERF: loads=70540
+PERF: stores=29536
+PERF: ifetch latency=57 cycles
+PERF: load latency=136 cycles
+PERF: instrs=413992, cycles=274923, IPC=1.505847
+PASSED!
+make: Leaving directory '/home/andyl/vortex/tests/regression/sgemm_tcu'
+CONFIGS=-DEXT_TCU_ENABLE -DNUM_CORES=4 -DNUM_WARPS=4 -DNUM_THREADS=4 -DPERF_ENABLE
+Running: CONFIGS="-DEXT_TCU_ENABLE -DNUM_CORES=4 -DNUM_WARPS=4 -DNUM_THREADS=4 -DPERF_ENABLE" make -C ./ci/../runtime/simx > /dev/null
+Running: make -C "./ci/../tests/regression/sgemm_tcu" run-simx
+make: Entering directory '/home/andyl/vortex/tests/regression/sgemm_tcu'
+LD_LIBRARY_PATH=/home/andyl/vortex/runtime: VORTEX_DRIVER=simx ./sgemm_tcu 
+open device connection
+input data type: fp16 (id=1)
+output data type: fp32 (id=0)
+WMMA Core Dimension: M=2, N=2, K=2
+WMMA Tile Dimension: M=8, N=4, K=8
+matrix A: 32x32
+matrix B: 32x256
+matrix C: 32x256
+allocate device memory
+A_addr=0x10000
+B_addr=0x11000
+C_addr=0x15000
+upload matrix A buffer
+upload matrix B buffer
+upload program
+upload kernel argument
+start device
+wait for completion
+Elapsed time: 735 ms
+download destination buffer
+verify result
+cleanup
+PERF: core0: scheduler idle=128907 (81%)
+PERF: core0: scheduler stalls=0 (0%)
+PERF: core0: ibuffer stalls=21088 (13%)
+PERF: core0: scoreboard stalls=38763 (24%) (alu=6%, lsu=92%, csrs=0%, wctl=0%, fpu=0%, tcu=0%)
+PERF: core0: operands stalls=4743 (3%)
+PERF: core0: ifetches=28734
+PERF: core0: ifetch latency=14 cycles
+PERF: core0: loads=19403
+PERF: core0: load latency=27 cycles
+PERF: core0: stores=4340
+PERF: core0: instrs=113782, cycles=157517, IPC=0.722347
+PERF: core1: scheduler idle=128906 (81%)
+PERF: core1: scheduler stalls=0 (0%)
+PERF: core1: ibuffer stalls=23051 (14%)
+PERF: core1: scoreboard stalls=53799 (34%) (alu=7%, lsu=92%, csrs=0%, wctl=0%, fpu=0%, tcu=0%)
+PERF: core1: operands stalls=4743 (3%)
+PERF: core1: ifetches=28734
+PERF: core1: ifetch latency=14 cycles
+PERF: core1: loads=19403
+PERF: core1: load latency=30 cycles
+PERF: core1: stores=4340
+PERF: core1: instrs=113782, cycles=157516, IPC=0.722352
+PERF: core2: scheduler idle=133069 (82%)
+PERF: core2: scheduler stalls=0 (0%)
+PERF: core2: ibuffer stalls=27754 (17%)
+PERF: core2: scoreboard stalls=44869 (27%) (alu=5%, lsu=93%, csrs=0%, wctl=0%, fpu=0%, tcu=0%)
+PERF: core2: operands stalls=4743 (2%)
+PERF: core2: ifetches=28734
+PERF: core2: ifetch latency=14 cycles
+PERF: core2: loads=19403
+PERF: core2: load latency=27 cycles
+PERF: core2: stores=4340
+PERF: core2: instrs=113782, cycles=161679, IPC=0.703753
+PERF: core3: scheduler idle=132196 (82%)
+PERF: core3: scheduler stalls=0 (0%)
+PERF: core3: ibuffer stalls=22917 (14%)
+PERF: core3: scoreboard stalls=53174 (33%) (alu=4%, lsu=94%, csrs=0%, wctl=0%, fpu=0%, tcu=0%)
+PERF: core3: operands stalls=4743 (2%)
+PERF: core3: ifetches=28734
+PERF: core3: ifetch latency=14 cycles
+PERF: core3: loads=19403
+PERF: core3: load latency=28 cycles
+PERF: core3: stores=4340
+PERF: core3: instrs=113782, cycles=160806, IPC=0.707573
+PERF: scheduler idle=523078 (82%)
+PERF: scheduler stalls=0 (0%)
+PERF: ibuffer stalls=94810 (14%)
+PERF: scoreboard stalls=190605 (29%) (alu=5%, lsu=93%, csrs=0%, wctl=0%, fpu=0%, tcu=0%)
+PERF: operands stalls=18972 (2%)
+PERF: ifetches=114936
+PERF: loads=77612
+PERF: stores=17360
+PERF: ifetch latency=14 cycles
+PERF: load latency=28 cycles
+PERF: instrs=455128, cycles=161679, IPC=2.815010
+PASSED!
+make: Leaving directory '/home/andyl/vortex/tests/regression/sgemm_tcu'
+CONFIGS=-DEXT_TCU_ENABLE -DNUM_CORES=4 -DNUM_WARPS=4 -DNUM_THREADS=8 -DPERF_ENABLE
+Running: CONFIGS="-DEXT_TCU_ENABLE -DNUM_CORES=4 -DNUM_WARPS=4 -DNUM_THREADS=8 -DPERF_ENABLE" make -C ./ci/../runtime/simx > /dev/null
+Running: make -C "./ci/../tests/regression/sgemm_tcu" run-simx
+make: Entering directory '/home/andyl/vortex/tests/regression/sgemm_tcu'
+LD_LIBRARY_PATH=/home/andyl/vortex/runtime: VORTEX_DRIVER=simx ./sgemm_tcu 
+open device connection
+input data type: fp16 (id=1)
+output data type: fp32 (id=0)
+WMMA Core Dimension: M=4, N=2, K=2
+WMMA Tile Dimension: M=8, N=8, K=16
+matrix A: 32x32
+matrix B: 32x256
+matrix C: 32x256
+allocate device memory
+A_addr=0x10000
+B_addr=0x11000
+C_addr=0x15000
+upload matrix A buffer
+upload matrix B buffer
+upload program
+upload kernel argument
+start device
+wait for completion
+Elapsed time: 1006 ms
+download destination buffer
+verify result
+cleanup
+PERF: core0: scheduler idle=203609 (94%)
+PERF: core0: scheduler stalls=0 (0%)
+PERF: core0: ibuffer stalls=100374 (46%)
+PERF: core0: scoreboard stalls=136724 (63%) (alu=1%, lsu=98%, csrs=0%, wctl=0%, fpu=0%, tcu=0%)
+PERF: core0: operands stalls=2375 (1%)
+PERF: core0: ifetches=12350
+PERF: core0: ifetch latency=22 cycles
+PERF: core0: loads=16763
+PERF: core0: load latency=112 cycles
+PERF: core0: stores=6036
+PERF: core0: instrs=96174, cycles=215835, IPC=0.445590
+PERF: core1: scheduler idle=203610 (94%)
+PERF: core1: scheduler stalls=0 (0%)
+PERF: core1: ibuffer stalls=100448 (46%)
+PERF: core1: scoreboard stalls=137045 (63%) (alu=1%, lsu=98%, csrs=0%, wctl=0%, fpu=0%, tcu=0%)
+PERF: core1: operands stalls=2375 (1%)
+PERF: core1: ifetches=12350
+PERF: core1: ifetch latency=22 cycles
+PERF: core1: loads=16763
+PERF: core1: load latency=113 cycles
+PERF: core1: stores=6036
+PERF: core1: instrs=96174, cycles=215836, IPC=0.445588
+PERF: core2: scheduler idle=203608 (94%)
+PERF: core2: scheduler stalls=0 (0%)
+PERF: core2: ibuffer stalls=99605 (46%)
+PERF: core2: scoreboard stalls=148041 (68%) (alu=1%, lsu=98%, csrs=0%, wctl=0%, fpu=0%, tcu=0%)
+PERF: core2: operands stalls=2375 (1%)
+PERF: core2: ifetches=12350
+PERF: core2: ifetch latency=22 cycles
+PERF: core2: loads=16763
+PERF: core2: load latency=116 cycles
+PERF: core2: stores=6036
+PERF: core2: instrs=96174, cycles=215834, IPC=0.445592
+PERF: core3: scheduler idle=204628 (94%)
+PERF: core3: scheduler stalls=0 (0%)
+PERF: core3: ibuffer stalls=102541 (47%)
+PERF: core3: scoreboard stalls=148960 (68%) (alu=1%, lsu=98%, csrs=0%, wctl=0%, fpu=0%, tcu=0%)
+PERF: core3: operands stalls=2375 (1%)
+PERF: core3: ifetches=12350
+PERF: core3: ifetch latency=21 cycles
+PERF: core3: loads=16763
+PERF: core3: load latency=125 cycles
+PERF: core3: stores=6036
+PERF: core3: instrs=96174, cycles=216854, IPC=0.443497
+PERF: scheduler idle=815455 (94%)
+PERF: scheduler stalls=0 (0%)
+PERF: ibuffer stalls=402968 (46%)
+PERF: scoreboard stalls=570770 (66%) (alu=1%, lsu=98%, csrs=0%, wctl=0%, fpu=0%, tcu=0%)
+PERF: operands stalls=9500 (1%)
+PERF: ifetches=49400
+PERF: loads=67052
+PERF: stores=24144
+PERF: ifetch latency=21 cycles
+PERF: load latency=117 cycles
+PERF: instrs=384696, cycles=216854, IPC=1.773986
+PASSED!
+make: Leaving directory '/home/andyl/vortex/tests/regression/sgemm_tcu'
+CONFIGS=-DEXT_TCU_ENABLE -DNUM_CORES=4 -DNUM_WARPS=8 -DNUM_THREADS=4 -DPERF_ENABLE
+Running: CONFIGS="-DEXT_TCU_ENABLE -DNUM_CORES=4 -DNUM_WARPS=8 -DNUM_THREADS=4 -DPERF_ENABLE" make -C ./ci/../runtime/simx > /dev/null
+Running: make -C "./ci/../tests/regression/sgemm_tcu" run-simx
+make: Entering directory '/home/andyl/vortex/tests/regression/sgemm_tcu'
+LD_LIBRARY_PATH=/home/andyl/vortex/runtime: VORTEX_DRIVER=simx ./sgemm_tcu 
+open device connection
+input data type: fp16 (id=1)
+output data type: fp32 (id=0)
+WMMA Core Dimension: M=2, N=2, K=2
+WMMA Tile Dimension: M=8, N=4, K=8
+matrix A: 32x32
+matrix B: 32x256
+matrix C: 32x256
+allocate device memory
+A_addr=0x10000
+B_addr=0x11000
+C_addr=0x15000
+upload matrix A buffer
+upload matrix B buffer
+upload program
+upload kernel argument
+start device
+wait for completion
+Elapsed time: 1019 ms
+download destination buffer
+verify result
+cleanup
+PERF: core0: scheduler idle=165271 (84%)
+PERF: core0: scheduler stalls=0 (0%)
+PERF: core0: ibuffer stalls=38487 (19%)
+PERF: core0: scoreboard stalls=83765 (43%) (alu=5%, lsu=94%, csrs=0%, wctl=0%, fpu=0%, tcu=0%)
+PERF: core0: operands stalls=4799 (2%)
+PERF: core0: ifetches=29702
+PERF: core0: ifetch latency=30 cycles
+PERF: core0: loads=19843
+PERF: core0: load latency=38 cycles
+PERF: core0: stores=5016
+PERF: core0: instrs=117475, cycles=194799, IPC=0.603058
+PERF: core1: scheduler idle=177024 (85%)
+PERF: core1: scheduler stalls=0 (0%)
+PERF: core1: ibuffer stalls=42849 (20%)
+PERF: core1: scoreboard stalls=86333 (41%) (alu=2%, lsu=97%, csrs=0%, wctl=0%, fpu=0%, tcu=0%)
+PERF: core1: operands stalls=4799 (2%)
+PERF: core1: ifetches=29702
+PERF: core1: ifetch latency=32 cycles
+PERF: core1: loads=19843
+PERF: core1: load latency=39 cycles
+PERF: core1: stores=5016
+PERF: core1: instrs=117474, cycles=206602, IPC=0.568600
+PERF: core2: scheduler idle=176441 (85%)
+PERF: core2: scheduler stalls=0 (0%)
+PERF: core2: ibuffer stalls=43213 (20%)
+PERF: core2: scoreboard stalls=66532 (32%) (alu=2%, lsu=97%, csrs=0%, wctl=0%, fpu=0%, tcu=0%)
+PERF: core2: operands stalls=4799 (2%)
+PERF: core2: ifetches=29702
+PERF: core2: ifetch latency=32 cycles
+PERF: core2: loads=19843
+PERF: core2: load latency=35 cycles
+PERF: core2: stores=5016
+PERF: core2: instrs=117474, cycles=206019, IPC=0.570210
+PERF: core3: scheduler idle=177334 (85%)
+PERF: core3: scheduler stalls=0 (0%)
+PERF: core3: ibuffer stalls=42172 (20%)
+PERF: core3: scoreboard stalls=63477 (30%) (alu=1%, lsu=98%, csrs=0%, wctl=0%, fpu=0%, tcu=0%)
+PERF: core3: operands stalls=4799 (2%)
+PERF: core3: ifetches=29702
+PERF: core3: ifetch latency=32 cycles
+PERF: core3: loads=19843
+PERF: core3: load latency=34 cycles
+PERF: core3: stores=5016
+PERF: core3: instrs=117474, cycles=206912, IPC=0.567749
+PERF: scheduler idle=696070 (85%)
+PERF: scheduler stalls=0 (0%)
+PERF: ibuffer stalls=166721 (20%)
+PERF: scoreboard stalls=300107 (36%) (alu=2%, lsu=96%, csrs=0%, wctl=0%, fpu=0%, tcu=0%)
+PERF: operands stalls=19196 (2%)
+PERF: ifetches=118808
+PERF: loads=79372
+PERF: stores=20064
+PERF: ifetch latency=32 cycles
+PERF: load latency=37 cycles
+PERF: instrs=469897, cycles=206912, IPC=2.270999
+PASSED!
+make: Leaving directory '/home/andyl/vortex/tests/regression/sgemm_tcu'
+CONFIGS=-DEXT_TCU_ENABLE -DNUM_CORES=4 -DNUM_WARPS=8 -DNUM_THREADS=8 -DPERF_ENABLE
+Running: CONFIGS="-DEXT_TCU_ENABLE -DNUM_CORES=4 -DNUM_WARPS=8 -DNUM_THREADS=8 -DPERF_ENABLE" make -C ./ci/../runtime/simx > /dev/null
+Running: make -C "./ci/../tests/regression/sgemm_tcu" run-simx
+make: Entering directory '/home/andyl/vortex/tests/regression/sgemm_tcu'
+LD_LIBRARY_PATH=/home/andyl/vortex/runtime: VORTEX_DRIVER=simx ./sgemm_tcu 
+open device connection
+input data type: fp16 (id=1)
+output data type: fp32 (id=0)
+WMMA Core Dimension: M=4, N=2, K=2
+WMMA Tile Dimension: M=8, N=8, K=16
+matrix A: 32x32
+matrix B: 32x256
+matrix C: 32x256
+allocate device memory
+A_addr=0x10000
+B_addr=0x11000
+C_addr=0x15000
+upload matrix A buffer
+upload matrix B buffer
+upload program
+upload kernel argument
+start device
+wait for completion
+Elapsed time: 1620 ms
+download destination buffer
+verify result
+cleanup
+PERF: core0: scheduler idle=261708 (95%)
+PERF: core0: scheduler stalls=0 (0%)
+PERF: core0: ibuffer stalls=105337 (38%)
+PERF: core0: scoreboard stalls=175963 (64%) (alu=0%, lsu=99%, csrs=0%, wctl=0%, fpu=0%, tcu=0%)
+PERF: core0: operands stalls=2431 (0%)
+PERF: core0: ifetches=13318
+PERF: core0: ifetch latency=57 cycles
+PERF: core0: loads=17635
+PERF: core0: load latency=132 cycles
+PERF: core0: stores=7384
+PERF: core0: instrs=103498, cycles=274902, IPC=0.376491
+PERF: core1: scheduler idle=261492 (95%)
+PERF: core1: scheduler stalls=0 (0%)
+PERF: core1: ibuffer stalls=102765 (37%)
+PERF: core1: scoreboard stalls=174998 (63%) (alu=0%, lsu=99%, csrs=0%, wctl=0%, fpu=0%, tcu=0%)
+PERF: core1: operands stalls=2431 (0%)
+PERF: core1: ifetches=13318
+PERF: core1: ifetch latency=57 cycles
+PERF: core1: loads=17635
+PERF: core1: load latency=136 cycles
+PERF: core1: stores=7384
+PERF: core1: instrs=103498, cycles=274686, IPC=0.376787
+PERF: core2: scheduler idle=261493 (95%)
+PERF: core2: scheduler stalls=0 (0%)
+PERF: core2: ibuffer stalls=100572 (36%)
+PERF: core2: scoreboard stalls=175702 (63%) (alu=0%, lsu=99%, csrs=0%, wctl=0%, fpu=0%, tcu=0%)
+PERF: core2: operands stalls=2431 (0%)
+PERF: core2: ifetches=13318
+PERF: core2: ifetch latency=57 cycles
+PERF: core2: loads=17635
+PERF: core2: load latency=141 cycles
+PERF: core2: stores=7384
+PERF: core2: instrs=103498, cycles=274687, IPC=0.376785
+PERF: core3: scheduler idle=261729 (95%)
+PERF: core3: scheduler stalls=0 (0%)
+PERF: core3: ibuffer stalls=101001 (36%)
+PERF: core3: scoreboard stalls=175693 (63%) (alu=0%, lsu=99%, csrs=0%, wctl=0%, fpu=0%, tcu=0%)
+PERF: core3: operands stalls=2431 (0%)
+PERF: core3: ifetches=13318
+PERF: core3: ifetch latency=57 cycles
+PERF: core3: loads=17635
+PERF: core3: load latency=135 cycles
+PERF: core3: stores=7384
+PERF: core3: instrs=103498, cycles=274923, IPC=0.376462
+PERF: scheduler idle=1046422 (95%)
+PERF: scheduler stalls=0 (0%)
+PERF: ibuffer stalls=409675 (37%)
+PERF: scoreboard stalls=702356 (63%) (alu=0%, lsu=99%, csrs=0%, wctl=0%, fpu=0%, tcu=0%)
+PERF: operands stalls=9724 (0%)
+PERF: ifetches=53272
+PERF: loads=70540
+PERF: stores=29536
+PERF: ifetch latency=57 cycles
+PERF: load latency=136 cycles
+PERF: instrs=413992, cycles=274923, IPC=1.505847
+PASSED!
+make: Leaving directory '/home/andyl/vortex/tests/regression/sgemm_tcu'
+CONFIGS=-DEXT_TCU_ENABLE -DNUM_CORES=4 -DNUM_WARPS=4 -DNUM_THREADS=4 -DPERF_ENABLE
+Running: CONFIGS="-DEXT_TCU_ENABLE -DNUM_CORES=4 -DNUM_WARPS=4 -DNUM_THREADS=4 -DPERF_ENABLE" make -C ./ci/../runtime/simx > /dev/null
+Running: make -C "./ci/../tests/regression/sgemm_tcu" run-simx
+make: Entering directory '/home/andyl/vortex/tests/regression/sgemm_tcu'
+LD_LIBRARY_PATH=/home/andyl/vortex/runtime: VORTEX_DRIVER=simx ./sgemm_tcu 
+open device connection
+input data type: tf32 (id=3)
+output data type: fp32 (id=0)
+WMMA Core Dimension: M=2, N=2, K=2
+WMMA Tile Dimension: M=8, N=4, K=4
+matrix A: 32x32
+matrix B: 32x256
+matrix C: 32x256
+allocate device memory
+A_addr=0x10000
+B_addr=0x11000
+C_addr=0x19000
+upload matrix A buffer
+upload matrix B buffer
+upload program
+upload kernel argument
+start device
+wait for completion
+Elapsed time: 935 ms
+download destination buffer
+verify result
+cleanup
+PERF: core0: scheduler idle=149594 (80%)
+PERF: core0: scheduler stalls=0 (0%)
+PERF: core0: ibuffer stalls=12598 (6%)
+PERF: core0: scoreboard stalls=26424 (14%) (alu=8%, lsu=90%, csrs=0%, wctl=0%, fpu=1%, tcu=0%)
+PERF: core0: operands stalls=8007 (4%)
+PERF: core0: ifetches=37502
+PERF: core0: ifetch latency=14 cycles
+PERF: core0: loads=27339
+PERF: core0: load latency=23 cycles
+PERF: core0: stores=4084
+PERF: core0: instrs=148854, cycles=186972, IPC=0.796130
+PERF: core1: scheduler idle=152119 (80%)
+PERF: core1: scheduler stalls=0 (0%)
+PERF: core1: ibuffer stalls=14919 (7%)
+PERF: core1: scoreboard stalls=28127 (14%) (alu=7%, lsu=90%, csrs=0%, wctl=0%, fpu=1%, tcu=0%)
+PERF: core1: operands stalls=8007 (4%)
+PERF: core1: ifetches=37502
+PERF: core1: ifetch latency=14 cycles
+PERF: core1: loads=27339
+PERF: core1: load latency=24 cycles
+PERF: core1: stores=4084
+PERF: core1: instrs=148854, cycles=189497, IPC=0.785522
+PERF: core2: scheduler idle=152161 (80%)
+PERF: core2: scheduler stalls=0 (0%)
+PERF: core2: ibuffer stalls=16562 (8%)
+PERF: core2: scoreboard stalls=31485 (16%) (alu=5%, lsu=93%, csrs=0%, wctl=0%, fpu=0%, tcu=0%)
+PERF: core2: operands stalls=8007 (4%)
+PERF: core2: ifetches=37502
+PERF: core2: ifetch latency=14 cycles
+PERF: core2: loads=27339
+PERF: core2: load latency=22 cycles
+PERF: core2: stores=4084
+PERF: core2: instrs=148854, cycles=189539, IPC=0.785348
+PERF: core3: scheduler idle=151996 (80%)
+PERF: core3: scheduler stalls=0 (0%)
+PERF: core3: ibuffer stalls=13532 (7%)
+PERF: core3: scoreboard stalls=26858 (14%) (alu=8%, lsu=90%, csrs=0%, wctl=0%, fpu=1%, tcu=0%)
+PERF: core3: operands stalls=8007 (4%)
+PERF: core3: ifetches=37502
+PERF: core3: ifetch latency=14 cycles
+PERF: core3: loads=27339
+PERF: core3: load latency=22 cycles
+PERF: core3: stores=4084
+PERF: core3: instrs=148854, cycles=189374, IPC=0.786032
+PERF: scheduler idle=605870 (80%)
+PERF: scheduler stalls=0 (0%)
+PERF: ibuffer stalls=57611 (7%)
+PERF: scoreboard stalls=112894 (14%) (alu=7%, lsu=91%, csrs=0%, wctl=0%, fpu=1%, tcu=0%)
+PERF: operands stalls=32028 (4%)
+PERF: ifetches=150008
+PERF: loads=109356
+PERF: stores=16336
+PERF: ifetch latency=14 cycles
+PERF: load latency=23 cycles
+PERF: instrs=595416, cycles=189539, IPC=3.141390
+PASSED!
+make: Leaving directory '/home/andyl/vortex/tests/regression/sgemm_tcu'
+CONFIGS=-DEXT_TCU_ENABLE -DNUM_CORES=4 -DNUM_WARPS=4 -DNUM_THREADS=8 -DPERF_ENABLE
+Running: CONFIGS="-DEXT_TCU_ENABLE -DNUM_CORES=4 -DNUM_WARPS=4 -DNUM_THREADS=8 -DPERF_ENABLE" make -C ./ci/../runtime/simx > /dev/null
+Running: make -C "./ci/../tests/regression/sgemm_tcu" run-simx
+make: Entering directory '/home/andyl/vortex/tests/regression/sgemm_tcu'
+LD_LIBRARY_PATH=/home/andyl/vortex/runtime: VORTEX_DRIVER=simx ./sgemm_tcu 
+open device connection
+input data type: tf32 (id=3)
+output data type: fp32 (id=0)
+WMMA Core Dimension: M=4, N=2, K=2
+WMMA Tile Dimension: M=8, N=8, K=8
+matrix A: 32x32
+matrix B: 32x256
+matrix C: 32x256
+allocate device memory
+A_addr=0x10000
+B_addr=0x11000
+C_addr=0x19000
+upload matrix A buffer
+upload matrix B buffer
+upload program
+upload kernel argument
+start device
+wait for completion
+Elapsed time: 1290 ms
+download destination buffer
+verify result
+cleanup
+PERF: core0: scheduler idle=210744 (94%)
+PERF: core0: scheduler stalls=0 (0%)
+PERF: core0: ibuffer stalls=103644 (46%)
+PERF: core0: scoreboard stalls=130191 (58%) (alu=0%, lsu=98%, csrs=0%, wctl=0%, fpu=0%, tcu=0%)
+PERF: core0: operands stalls=3623 (1%)
+PERF: core0: ifetches=13662
+PERF: core0: ifetch latency=22 cycles
+PERF: core0: loads=20859
+PERF: core0: load latency=100 cycles
+PERF: core0: stores=6036
+PERF: core0: instrs=106670, cycles=224117, IPC=0.475957
+PERF: core1: scheduler idle=210745 (94%)
+PERF: core1: scheduler stalls=0 (0%)
+PERF: core1: ibuffer stalls=103821 (46%)
+PERF: core1: scoreboard stalls=131614 (58%) (alu=0%, lsu=98%, csrs=0%, wctl=0%, fpu=0%, tcu=0%)
+PERF: core1: operands stalls=3623 (1%)
+PERF: core1: ifetches=13662
+PERF: core1: ifetch latency=22 cycles
+PERF: core1: loads=20859
+PERF: core1: load latency=104 cycles
+PERF: core1: stores=6036
+PERF: core1: instrs=106670, cycles=224118, IPC=0.475955
+PERF: core2: scheduler idle=211073 (93%)
+PERF: core2: scheduler stalls=0 (0%)
+PERF: core2: ibuffer stalls=99551 (44%)
+PERF: core2: scoreboard stalls=148055 (65%) (alu=0%, lsu=99%, csrs=0%, wctl=0%, fpu=0%, tcu=0%)
+PERF: core2: operands stalls=3623 (1%)
+PERF: core2: ifetches=13662
+PERF: core2: ifetch latency=22 cycles
+PERF: core2: loads=20859
+PERF: core2: load latency=98 cycles
+PERF: core2: stores=6036
+PERF: core2: instrs=106670, cycles=224611, IPC=0.474910
+PERF: core3: scheduler idle=211044 (93%)
+PERF: core3: scheduler stalls=0 (0%)
+PERF: core3: ibuffer stalls=100249 (44%)
+PERF: core3: scoreboard stalls=147957 (65%) (alu=0%, lsu=99%, csrs=0%, wctl=0%, fpu=0%, tcu=0%)
+PERF: core3: operands stalls=3623 (1%)
+PERF: core3: ifetches=13662
+PERF: core3: ifetch latency=22 cycles
+PERF: core3: loads=20859
+PERF: core3: load latency=102 cycles
+PERF: core3: stores=6036
+PERF: core3: instrs=106670, cycles=224582, IPC=0.474971
+PERF: scheduler idle=843606 (94%)
+PERF: scheduler stalls=0 (0%)
+PERF: ibuffer stalls=407265 (45%)
+PERF: scoreboard stalls=557817 (62%) (alu=0%, lsu=98%, csrs=0%, wctl=0%, fpu=0%, tcu=0%)
+PERF: operands stalls=14492 (1%)
+PERF: ifetches=54648
+PERF: loads=83436
+PERF: stores=24144
+PERF: ifetch latency=22 cycles
+PERF: load latency=101 cycles
+PERF: instrs=426680, cycles=224611, IPC=1.899640
+PASSED!
+make: Leaving directory '/home/andyl/vortex/tests/regression/sgemm_tcu'
+CONFIGS=-DEXT_TCU_ENABLE -DNUM_CORES=4 -DNUM_WARPS=8 -DNUM_THREADS=4 -DPERF_ENABLE
+Running: CONFIGS="-DEXT_TCU_ENABLE -DNUM_CORES=4 -DNUM_WARPS=8 -DNUM_THREADS=4 -DPERF_ENABLE" make -C ./ci/../runtime/simx > /dev/null
+Running: make -C "./ci/../tests/regression/sgemm_tcu" run-simx
+make: Entering directory '/home/andyl/vortex/tests/regression/sgemm_tcu'
+LD_LIBRARY_PATH=/home/andyl/vortex/runtime: VORTEX_DRIVER=simx ./sgemm_tcu 
+open device connection
+input data type: tf32 (id=3)
+output data type: fp32 (id=0)
+WMMA Core Dimension: M=2, N=2, K=2
+WMMA Tile Dimension: M=8, N=4, K=4
+matrix A: 32x32
+matrix B: 32x256
+matrix C: 32x256
+allocate device memory
+A_addr=0x10000
+B_addr=0x11000
+C_addr=0x19000
+upload matrix A buffer
+upload matrix B buffer
+upload program
+upload kernel argument
+start device
+wait for completion
+Elapsed time: 1202 ms
+download destination buffer
+verify result
+cleanup
+PERF: core0: scheduler idle=198448 (83%)
+PERF: core0: scheduler stalls=0 (0%)
+PERF: core0: ibuffer stalls=39200 (16%)
+PERF: core0: scoreboard stalls=68164 (28%) (alu=3%, lsu=95%, csrs=0%, wctl=0%, fpu=0%, tcu=0%)
+PERF: core0: operands stalls=8063 (3%)
+PERF: core0: ifetches=38470
+PERF: core0: ifetch latency=32 cycles
+PERF: core0: loads=27779
+PERF: core0: load latency=31 cycles
+PERF: core0: stores=4760
+PERF: core0: instrs=152546, cycles=236794, IPC=0.644214
+PERF: core1: scheduler idle=199622 (83%)
+PERF: core1: scheduler stalls=0 (0%)
+PERF: core1: ibuffer stalls=38180 (16%)
+PERF: core1: scoreboard stalls=67875 (28%) (alu=2%, lsu=97%, csrs=0%, wctl=0%, fpu=0%, tcu=0%)
+PERF: core1: operands stalls=8063 (3%)
+PERF: core1: ifetches=38470
+PERF: core1: ifetch latency=32 cycles
+PERF: core1: loads=27779
+PERF: core1: load latency=31 cycles
+PERF: core1: stores=4760
+PERF: core1: instrs=152546, cycles=237968, IPC=0.641036
+PERF: core2: scheduler idle=197932 (83%)
+PERF: core2: scheduler stalls=0 (0%)
+PERF: core2: ibuffer stalls=37028 (15%)
+PERF: core2: scoreboard stalls=72158 (30%) (alu=2%, lsu=96%, csrs=0%, wctl=0%, fpu=0%, tcu=0%)
+PERF: core2: operands stalls=8063 (3%)
+PERF: core2: ifetches=38470
+PERF: core2: ifetch latency=32 cycles
+PERF: core2: loads=27779
+PERF: core2: load latency=33 cycles
+PERF: core2: stores=4760
+PERF: core2: instrs=152546, cycles=236278, IPC=0.645621
+PERF: core3: scheduler idle=200192 (83%)
+PERF: core3: scheduler stalls=0 (0%)
+PERF: core3: ibuffer stalls=34753 (14%)
+PERF: core3: scoreboard stalls=53933 (22%) (alu=1%, lsu=97%, csrs=0%, wctl=0%, fpu=0%, tcu=0%)
+PERF: core3: operands stalls=8063 (3%)
+PERF: core3: ifetches=38470
+PERF: core3: ifetch latency=32 cycles
+PERF: core3: loads=27779
+PERF: core3: load latency=28 cycles
+PERF: core3: stores=4760
+PERF: core3: instrs=152546, cycles=238538, IPC=0.639504
+PERF: scheduler idle=796194 (83%)
+PERF: scheduler stalls=0 (0%)
+PERF: ibuffer stalls=149161 (15%)
+PERF: scoreboard stalls=262130 (27%) (alu=2%, lsu=97%, csrs=0%, wctl=0%, fpu=0%, tcu=0%)
+PERF: operands stalls=32252 (3%)
+PERF: ifetches=153880
+PERF: loads=111116
+PERF: stores=19040
+PERF: ifetch latency=32 cycles
+PERF: load latency=31 cycles
+PERF: instrs=610184, cycles=238538, IPC=2.558016
+PASSED!
+make: Leaving directory '/home/andyl/vortex/tests/regression/sgemm_tcu'
+CONFIGS=-DEXT_TCU_ENABLE -DNUM_CORES=4 -DNUM_WARPS=8 -DNUM_THREADS=8 -DPERF_ENABLE
+Running: CONFIGS="-DEXT_TCU_ENABLE -DNUM_CORES=4 -DNUM_WARPS=8 -DNUM_THREADS=8 -DPERF_ENABLE" make -C ./ci/../runtime/simx > /dev/null
+Running: make -C "./ci/../tests/regression/sgemm_tcu" run-simx
+make: Entering directory '/home/andyl/vortex/tests/regression/sgemm_tcu'
+LD_LIBRARY_PATH=/home/andyl/vortex/runtime: VORTEX_DRIVER=simx ./sgemm_tcu 
+open device connection
+input data type: tf32 (id=3)
+output data type: fp32 (id=0)
+WMMA Core Dimension: M=4, N=2, K=2
+WMMA Tile Dimension: M=8, N=8, K=8
+matrix A: 32x32
+matrix B: 32x256
+matrix C: 32x256
+allocate device memory
+A_addr=0x10000
+B_addr=0x11000
+C_addr=0x19000
+upload matrix A buffer
+upload matrix B buffer
+upload program
+upload kernel argument
+start device
+wait for completion
+Elapsed time: 1727 ms
+download destination buffer
+verify result
+cleanup
+PERF: core0: scheduler idle=266588 (94%)
+PERF: core0: scheduler stalls=0 (0%)
+PERF: core0: ibuffer stalls=109689 (39%)
+PERF: core0: scoreboard stalls=185212 (65%) (alu=0%, lsu=99%, csrs=0%, wctl=0%, fpu=0%, tcu=0%)
+PERF: core0: operands stalls=3679 (1%)
+PERF: core0: ifetches=14630
+PERF: core0: ifetch latency=50 cycles
+PERF: core0: loads=21731
+PERF: core0: load latency=128 cycles
+PERF: core0: stores=7384
+PERF: core0: instrs=113994, cycles=281094, IPC=0.405537
+PERF: core1: scheduler idle=266501 (94%)
+PERF: core1: scheduler stalls=0 (0%)
+PERF: core1: ibuffer stalls=109209 (38%)
+PERF: core1: scoreboard stalls=184835 (65%) (alu=0%, lsu=99%, csrs=0%, wctl=0%, fpu=0%, tcu=0%)
+PERF: core1: operands stalls=3679 (1%)
+PERF: core1: ifetches=14630
+PERF: core1: ifetch latency=50 cycles
+PERF: core1: loads=21731
+PERF: core1: load latency=124 cycles
+PERF: core1: stores=7384
+PERF: core1: instrs=113994, cycles=281007, IPC=0.405663
+PERF: core2: scheduler idle=266526 (94%)
+PERF: core2: scheduler stalls=0 (0%)
+PERF: core2: ibuffer stalls=109468 (38%)
+PERF: core2: scoreboard stalls=184702 (65%) (alu=0%, lsu=99%, csrs=0%, wctl=0%, fpu=0%, tcu=0%)
+PERF: core2: operands stalls=3679 (1%)
+PERF: core2: ifetches=14630
+PERF: core2: ifetch latency=50 cycles
+PERF: core2: loads=21731
+PERF: core2: load latency=122 cycles
+PERF: core2: stores=7384
+PERF: core2: instrs=113994, cycles=281032, IPC=0.405626
+PERF: core3: scheduler idle=266369 (94%)
+PERF: core3: scheduler stalls=0 (0%)
+PERF: core3: ibuffer stalls=113130 (40%)
+PERF: core3: scoreboard stalls=184897 (65%) (alu=0%, lsu=99%, csrs=0%, wctl=0%, fpu=0%, tcu=0%)
+PERF: core3: operands stalls=3679 (1%)
+PERF: core3: ifetches=14630
+PERF: core3: ifetch latency=50 cycles
+PERF: core3: loads=21731
+PERF: core3: load latency=130 cycles
+PERF: core3: stores=7384
+PERF: core3: instrs=113994, cycles=280634, IPC=0.406202
+PERF: scheduler idle=1065984 (94%)
+PERF: scheduler stalls=0 (0%)
+PERF: ibuffer stalls=441496 (39%)
+PERF: scoreboard stalls=739646 (65%) (alu=0%, lsu=99%, csrs=0%, wctl=0%, fpu=0%, tcu=0%)
+PERF: operands stalls=14716 (1%)
+PERF: ifetches=58520
+PERF: loads=86924
+PERF: stores=29536
+PERF: ifetch latency=50 cycles
+PERF: load latency=126 cycles
+PERF: instrs=455976, cycles=281094, IPC=1.622148
+PASSED!
+make: Leaving directory '/home/andyl/vortex/tests/regression/sgemm_tcu'

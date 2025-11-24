@@ -1,0 +1,627 @@
+// Verilated -*- C++ -*-
+// DESCRIPTION: Verilator output: Design implementation internals
+// See Vrtlsim_shim.h for the primary calling header
+
+#include "Vrtlsim_shim__pch.h"
+#include "Vrtlsim_shim_VX_tcu_fedp_bhf__Ld_N2.h"
+#include "Vrtlsim_shim__Syms.h"
+
+VL_ATTR_COLD void Vrtlsim_shim_VX_tcu_fedp_bhf__Ld_N2___stl_comb__TOP__rtlsim_shim__DOT__vortex__DOT__g_clusters__BRA__0__KET____DOT__cluster__DOT__g_sockets__BRA__0__KET____DOT__socket__DOT__g_cores__BRA__3__KET____DOT__core__DOT__execute__DOT__tcu_unit__DOT__g_blocks__BRA__0__KET____DOT__tcu_fp__DOT__g_i__BRA__3__KET____DOT__g_j__BRA__0__KET____DOT__fedp__0(Vrtlsim_shim_VX_tcu_fedp_bhf__Ld_N2* vlSelf) {
+    if (false && vlSelf) {}  // Prevent unused
+    Vrtlsim_shim__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
+    VL_DEBUG_IF(VL_DBG_MSGF("+                      Vrtlsim_shim_VX_tcu_fedp_bhf__Ld_N2___stl_comb__TOP__rtlsim_shim__DOT__vortex__DOT__g_clusters__BRA__0__KET____DOT__cluster__DOT__g_sockets__BRA__0__KET____DOT__socket__DOT__g_cores__BRA__3__KET____DOT__core__DOT__execute__DOT__tcu_unit__DOT__g_blocks__BRA__0__KET____DOT__tcu_fp__DOT__g_i__BRA__3__KET____DOT__g_j__BRA__0__KET____DOT__fedp__0\n"); );
+    // Body
+    vlSelf->__PVT__conv_c__DOT__adjustedExp = (0x1ffU 
+                                               & (((0U 
+                                                    == 
+                                                    (0xffU 
+                                                     & ((vlSymsp->TOP.rtlsim_shim__DOT__vortex__DOT__g_clusters__BRA__0__KET____DOT__cluster__DOT__g_sockets__BRA__0__KET____DOT__socket__DOT__g_cores__BRA__3__KET____DOT__core__DOT__execute__DOT__tcu_unit__DOT__g_blocks__BRA__0__KET____DOT__tcu_fp__DOT__g_i__BRA__3__KET____DOT__g_j__BRA__0__KET____DOT_____05Fbuffer_ex141__DOT__g_shift_register__DOT__g_shift__DOT__pipe[1U] 
+                                                         << 3U) 
+                                                        | (vlSymsp->TOP.rtlsim_shim__DOT__vortex__DOT__g_clusters__BRA__0__KET____DOT__cluster__DOT__g_sockets__BRA__0__KET____DOT__socket__DOT__g_cores__BRA__3__KET____DOT__core__DOT__execute__DOT__tcu_unit__DOT__g_blocks__BRA__0__KET____DOT__tcu_fp__DOT__g_i__BRA__3__KET____DOT__g_j__BRA__0__KET____DOT_____05Fbuffer_ex141__DOT__g_shift_register__DOT__g_shift__DOT__pipe[0U] 
+                                                           >> 0x1dU))))
+                                                    ? 
+                                                   (0x1e0U 
+                                                    | (0x1fU 
+                                                       & (~ 
+                                                          vlSelf->__PVT__conv_c__DOT__clz__DOT__lzc__DOT__g_lzc__DOT__find_first__DOT__d_n
+                                                          [0U])))
+                                                    : 
+                                                   (0xffU 
+                                                    & ((vlSymsp->TOP.rtlsim_shim__DOT__vortex__DOT__g_clusters__BRA__0__KET____DOT__cluster__DOT__g_sockets__BRA__0__KET____DOT__socket__DOT__g_cores__BRA__3__KET____DOT__core__DOT__execute__DOT__tcu_unit__DOT__g_blocks__BRA__0__KET____DOT__tcu_fp__DOT__g_i__BRA__3__KET____DOT__g_j__BRA__0__KET____DOT_____05Fbuffer_ex141__DOT__g_shift_register__DOT__g_shift__DOT__pipe[1U] 
+                                                        << 3U) 
+                                                       | (vlSymsp->TOP.rtlsim_shim__DOT__vortex__DOT__g_clusters__BRA__0__KET____DOT__cluster__DOT__g_sockets__BRA__0__KET____DOT__socket__DOT__g_cores__BRA__3__KET____DOT__core__DOT__execute__DOT__tcu_unit__DOT__g_blocks__BRA__0__KET____DOT__tcu_fp__DOT__g_i__BRA__3__KET____DOT__g_j__BRA__0__KET____DOT_____05Fbuffer_ex141__DOT__g_shift_register__DOT__g_shift__DOT__pipe[0U] 
+                                                          >> 0x1dU)))) 
+                                                  + 
+                                                  (0x80U 
+                                                   | ((0U 
+                                                       == 
+                                                       (0xffU 
+                                                        & ((vlSymsp->TOP.rtlsim_shim__DOT__vortex__DOT__g_clusters__BRA__0__KET____DOT__cluster__DOT__g_sockets__BRA__0__KET____DOT__socket__DOT__g_cores__BRA__3__KET____DOT__core__DOT__execute__DOT__tcu_unit__DOT__g_blocks__BRA__0__KET____DOT__tcu_fp__DOT__g_i__BRA__3__KET____DOT__g_j__BRA__0__KET____DOT_____05Fbuffer_ex141__DOT__g_shift_register__DOT__g_shift__DOT__pipe[1U] 
+                                                            << 3U) 
+                                                           | (vlSymsp->TOP.rtlsim_shim__DOT__vortex__DOT__g_clusters__BRA__0__KET____DOT__cluster__DOT__g_sockets__BRA__0__KET____DOT__socket__DOT__g_cores__BRA__3__KET____DOT__core__DOT__execute__DOT__tcu_unit__DOT__g_blocks__BRA__0__KET____DOT__tcu_fp__DOT__g_i__BRA__3__KET____DOT__g_j__BRA__0__KET____DOT_____05Fbuffer_ex141__DOT__g_shift_register__DOT__g_shift__DOT__pipe[0U] 
+                                                              >> 0x1dU))))
+                                                       ? 2U
+                                                       : 1U))));
+}
+
+VL_ATTR_COLD void Vrtlsim_shim_VX_tcu_fedp_bhf__Ld_N2___stl_comb__TOP__rtlsim_shim__DOT__vortex__DOT__g_clusters__BRA__0__KET____DOT__cluster__DOT__g_sockets__BRA__0__KET____DOT__socket__DOT__g_cores__BRA__3__KET____DOT__core__DOT__execute__DOT__tcu_unit__DOT__g_blocks__BRA__0__KET____DOT__tcu_fp__DOT__g_i__BRA__3__KET____DOT__g_j__BRA__0__KET____DOT__fedp__1(Vrtlsim_shim_VX_tcu_fedp_bhf__Ld_N2* vlSelf) {
+    if (false && vlSelf) {}  // Prevent unused
+    Vrtlsim_shim__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
+    VL_DEBUG_IF(VL_DBG_MSGF("+                      Vrtlsim_shim_VX_tcu_fedp_bhf__Ld_N2___stl_comb__TOP__rtlsim_shim__DOT__vortex__DOT__g_clusters__BRA__0__KET____DOT__cluster__DOT__g_sockets__BRA__0__KET____DOT__socket__DOT__g_cores__BRA__3__KET____DOT__core__DOT__execute__DOT__tcu_unit__DOT__g_blocks__BRA__0__KET____DOT__tcu_fp__DOT__g_i__BRA__3__KET____DOT__g_j__BRA__0__KET____DOT__fedp__1\n"); );
+    // Init
+    SData/*8:0*/ __PVT__g_prod__BRA__0__KET____DOT__g_tf32_even__DOT__tf32_mul__DOT__g_in_ieee__DOT__from_ieee_a__DOT__adjustedExp;
+    __PVT__g_prod__BRA__0__KET____DOT__g_tf32_even__DOT__tf32_mul__DOT__g_in_ieee__DOT__from_ieee_a__DOT__adjustedExp = 0;
+    // Body
+    vlSelf->__VdfgTmp_hf2991b4d__0 = (0x3ffU & ((0U 
+                                                 == 
+                                                 (0xffU 
+                                                  & (vlSymsp->TOP.rtlsim_shim__DOT__vortex__DOT__g_clusters__BRA__0__KET____DOT__cluster__DOT__g_sockets__BRA__0__KET____DOT__socket__DOT__g_cores__BRA__3__KET____DOT__core__DOT__execute__DOT__tcu_unit__DOT__g_blocks__BRA__0__KET____DOT__tcu_fp__DOT__g_i__BRA__3__KET____DOT__g_j__BRA__0__KET____DOT_____05Fbuffer_ex141__DOT__g_shift_register__DOT__g_shift__DOT__pipe[3U] 
+                                                     >> 0x10U)))
+                                                 ? 
+                                                VL_SHIFTL_III(10,10,32, 
+                                                              (((vlSymsp->TOP.rtlsim_shim__DOT__vortex__DOT__g_clusters__BRA__0__KET____DOT__cluster__DOT__g_sockets__BRA__0__KET____DOT__socket__DOT__g_cores__BRA__3__KET____DOT__core__DOT__execute__DOT__tcu_unit__DOT__g_blocks__BRA__0__KET____DOT__tcu_fp__DOT__g_i__BRA__3__KET____DOT__g_j__BRA__0__KET____DOT_____05Fbuffer_ex141__DOT__g_shift_register__DOT__g_shift__DOT__pipe[3U] 
+                                                                 << 0x1aU) 
+                                                                | (vlSymsp->TOP.rtlsim_shim__DOT__vortex__DOT__g_clusters__BRA__0__KET____DOT__cluster__DOT__g_sockets__BRA__0__KET____DOT__socket__DOT__g_cores__BRA__3__KET____DOT__core__DOT__execute__DOT__tcu_unit__DOT__g_blocks__BRA__0__KET____DOT__tcu_fp__DOT__g_i__BRA__3__KET____DOT__g_j__BRA__0__KET____DOT_____05Fbuffer_ex141__DOT__g_shift_register__DOT__g_shift__DOT__pipe[3U] 
+                                                                   >> 6U)) 
+                                                               << 
+                                                               vlSelf->__PVT__g_prod__BRA__0__KET____DOT__g_tf32_even__DOT__tf32_mul__DOT__g_in_ieee__DOT__from_ieee_a__DOT__clz__DOT__lzc__DOT__g_lzc__DOT__find_first__DOT__d_n
+                                                               [0U]), 1U)
+                                                 : 
+                                                ((vlSymsp->TOP.rtlsim_shim__DOT__vortex__DOT__g_clusters__BRA__0__KET____DOT__cluster__DOT__g_sockets__BRA__0__KET____DOT__socket__DOT__g_cores__BRA__3__KET____DOT__core__DOT__execute__DOT__tcu_unit__DOT__g_blocks__BRA__0__KET____DOT__tcu_fp__DOT__g_i__BRA__3__KET____DOT__g_j__BRA__0__KET____DOT_____05Fbuffer_ex141__DOT__g_shift_register__DOT__g_shift__DOT__pipe[3U] 
+                                                  << 0x1aU) 
+                                                 | (vlSymsp->TOP.rtlsim_shim__DOT__vortex__DOT__g_clusters__BRA__0__KET____DOT__cluster__DOT__g_sockets__BRA__0__KET____DOT__socket__DOT__g_cores__BRA__3__KET____DOT__core__DOT__execute__DOT__tcu_unit__DOT__g_blocks__BRA__0__KET____DOT__tcu_fp__DOT__g_i__BRA__3__KET____DOT__g_j__BRA__0__KET____DOT_____05Fbuffer_ex141__DOT__g_shift_register__DOT__g_shift__DOT__pipe[3U] 
+                                                    >> 6U))));
+    __PVT__g_prod__BRA__0__KET____DOT__g_tf32_even__DOT__tf32_mul__DOT__g_in_ieee__DOT__from_ieee_a__DOT__adjustedExp 
+        = (0x1ffU & (((0U == (0xffU & (vlSymsp->TOP.rtlsim_shim__DOT__vortex__DOT__g_clusters__BRA__0__KET____DOT__cluster__DOT__g_sockets__BRA__0__KET____DOT__socket__DOT__g_cores__BRA__3__KET____DOT__core__DOT__execute__DOT__tcu_unit__DOT__g_blocks__BRA__0__KET____DOT__tcu_fp__DOT__g_i__BRA__3__KET____DOT__g_j__BRA__0__KET____DOT_____05Fbuffer_ex141__DOT__g_shift_register__DOT__g_shift__DOT__pipe[3U] 
+                                       >> 0x10U))) ? 
+                      (0x1f0U | (0xfU & (~ vlSelf->__PVT__g_prod__BRA__0__KET____DOT__g_tf32_even__DOT__tf32_mul__DOT__g_in_ieee__DOT__from_ieee_a__DOT__clz__DOT__lzc__DOT__g_lzc__DOT__find_first__DOT__d_n
+                                         [0U]))) : 
+                      (0xffU & (vlSymsp->TOP.rtlsim_shim__DOT__vortex__DOT__g_clusters__BRA__0__KET____DOT__cluster__DOT__g_sockets__BRA__0__KET____DOT__socket__DOT__g_cores__BRA__3__KET____DOT__core__DOT__execute__DOT__tcu_unit__DOT__g_blocks__BRA__0__KET____DOT__tcu_fp__DOT__g_i__BRA__3__KET____DOT__g_j__BRA__0__KET____DOT_____05Fbuffer_ex141__DOT__g_shift_register__DOT__g_shift__DOT__pipe[3U] 
+                                >> 0x10U))) + (0x80U 
+                                               | ((0U 
+                                                   == 
+                                                   (0xffU 
+                                                    & (vlSymsp->TOP.rtlsim_shim__DOT__vortex__DOT__g_clusters__BRA__0__KET____DOT__cluster__DOT__g_sockets__BRA__0__KET____DOT__socket__DOT__g_cores__BRA__3__KET____DOT__core__DOT__execute__DOT__tcu_unit__DOT__g_blocks__BRA__0__KET____DOT__tcu_fp__DOT__g_i__BRA__3__KET____DOT__g_j__BRA__0__KET____DOT_____05Fbuffer_ex141__DOT__g_shift_register__DOT__g_shift__DOT__pipe[3U] 
+                                                       >> 0x10U)))
+                                                   ? 2U
+                                                   : 1U))));
+    vlSelf->__VdfgTmp_h5ed1b8fd__0 = (7U & ((3U == 
+                                             (3U & 
+                                              ((IData)(__PVT__g_prod__BRA__0__KET____DOT__g_tf32_even__DOT__tf32_mul__DOT__g_in_ieee__DOT__from_ieee_a__DOT__adjustedExp) 
+                                               >> 7U)))
+                                             ? (6U 
+                                                | (0U 
+                                                   != 
+                                                   (0x3ffU 
+                                                    & (vlSymsp->TOP.rtlsim_shim__DOT__vortex__DOT__g_clusters__BRA__0__KET____DOT__cluster__DOT__g_sockets__BRA__0__KET____DOT__socket__DOT__g_cores__BRA__3__KET____DOT__core__DOT__execute__DOT__tcu_unit__DOT__g_blocks__BRA__0__KET____DOT__tcu_fp__DOT__g_i__BRA__3__KET____DOT__g_j__BRA__0__KET____DOT_____05Fbuffer_ex141__DOT__g_shift_register__DOT__g_shift__DOT__pipe[3U] 
+                                                       >> 6U))))
+                                             : ((IData)(
+                                                        (0U 
+                                                         == 
+                                                         (0xffffc0U 
+                                                          & vlSymsp->TOP.rtlsim_shim__DOT__vortex__DOT__g_clusters__BRA__0__KET____DOT__cluster__DOT__g_sockets__BRA__0__KET____DOT__socket__DOT__g_cores__BRA__3__KET____DOT__core__DOT__execute__DOT__tcu_unit__DOT__g_blocks__BRA__0__KET____DOT__tcu_fp__DOT__g_i__BRA__3__KET____DOT__g_j__BRA__0__KET____DOT_____05Fbuffer_ex141__DOT__g_shift_register__DOT__g_shift__DOT__pipe[3U])))
+                                                 ? 0U
+                                                 : 
+                                                ((IData)(__PVT__g_prod__BRA__0__KET____DOT__g_tf32_even__DOT__tf32_mul__DOT__g_in_ieee__DOT__from_ieee_a__DOT__adjustedExp) 
+                                                 >> 6U))));
+    vlSelf->__PVT__g_prod__BRA__0__KET____DOT__g_tf32_even__DOT__tf32_mul__DOT__multiplier__DOT__recFNToRawFN_a__DOT__exp 
+        = (((IData)(vlSelf->__VdfgTmp_h5ed1b8fd__0) 
+            << 6U) | (0x3fU & (IData)(__PVT__g_prod__BRA__0__KET____DOT__g_tf32_even__DOT__tf32_mul__DOT__g_in_ieee__DOT__from_ieee_a__DOT__adjustedExp)));
+    vlSelf->__PVT__g_prod__BRA__0__KET____DOT__g_tf32_even__DOT__tf32_mul__DOT__multiplier__DOT__isInfA 
+        = ((~ (IData)(vlSelf->__VdfgTmp_h5ed1b8fd__0)) 
+           & (3U == VL_SHIFTR_III(32,32,32, (IData)(vlSelf->__PVT__g_prod__BRA__0__KET____DOT__g_tf32_even__DOT__tf32_mul__DOT__multiplier__DOT__recFNToRawFN_a__DOT__exp), 7U)));
+}
+
+VL_ATTR_COLD void Vrtlsim_shim_VX_tcu_fedp_bhf__Ld_N2___stl_comb__TOP__rtlsim_shim__DOT__vortex__DOT__g_clusters__BRA__0__KET____DOT__cluster__DOT__g_sockets__BRA__0__KET____DOT__socket__DOT__g_cores__BRA__3__KET____DOT__core__DOT__execute__DOT__tcu_unit__DOT__g_blocks__BRA__0__KET____DOT__tcu_fp__DOT__g_i__BRA__3__KET____DOT__g_j__BRA__0__KET____DOT__fedp__2(Vrtlsim_shim_VX_tcu_fedp_bhf__Ld_N2* vlSelf) {
+    if (false && vlSelf) {}  // Prevent unused
+    Vrtlsim_shim__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
+    VL_DEBUG_IF(VL_DBG_MSGF("+                      Vrtlsim_shim_VX_tcu_fedp_bhf__Ld_N2___stl_comb__TOP__rtlsim_shim__DOT__vortex__DOT__g_clusters__BRA__0__KET____DOT__cluster__DOT__g_sockets__BRA__0__KET____DOT__socket__DOT__g_cores__BRA__3__KET____DOT__core__DOT__execute__DOT__tcu_unit__DOT__g_blocks__BRA__0__KET____DOT__tcu_fp__DOT__g_i__BRA__3__KET____DOT__g_j__BRA__0__KET____DOT__fedp__2\n"); );
+    // Init
+    SData/*8:0*/ __PVT__g_prod__BRA__2__KET____DOT__g_tf32_even__DOT__tf32_mul__DOT__g_in_ieee__DOT__from_ieee_a__DOT__adjustedExp;
+    __PVT__g_prod__BRA__2__KET____DOT__g_tf32_even__DOT__tf32_mul__DOT__g_in_ieee__DOT__from_ieee_a__DOT__adjustedExp = 0;
+    // Body
+    vlSelf->__VdfgTmp_hdc032bfa__0 = (0x3ffU & ((0U 
+                                                 == 
+                                                 (0xffU 
+                                                  & (vlSymsp->TOP.rtlsim_shim__DOT__vortex__DOT__g_clusters__BRA__0__KET____DOT__cluster__DOT__g_sockets__BRA__0__KET____DOT__socket__DOT__g_cores__BRA__3__KET____DOT__core__DOT__execute__DOT__tcu_unit__DOT__g_blocks__BRA__0__KET____DOT__tcu_fp__DOT__g_i__BRA__3__KET____DOT__g_j__BRA__0__KET____DOT_____05Fbuffer_ex141__DOT__g_shift_register__DOT__g_shift__DOT__pipe[4U] 
+                                                     >> 0x10U)))
+                                                 ? 
+                                                VL_SHIFTL_III(10,10,32, 
+                                                              (((vlSymsp->TOP.rtlsim_shim__DOT__vortex__DOT__g_clusters__BRA__0__KET____DOT__cluster__DOT__g_sockets__BRA__0__KET____DOT__socket__DOT__g_cores__BRA__3__KET____DOT__core__DOT__execute__DOT__tcu_unit__DOT__g_blocks__BRA__0__KET____DOT__tcu_fp__DOT__g_i__BRA__3__KET____DOT__g_j__BRA__0__KET____DOT_____05Fbuffer_ex141__DOT__g_shift_register__DOT__g_shift__DOT__pipe[4U] 
+                                                                 << 0x1aU) 
+                                                                | (vlSymsp->TOP.rtlsim_shim__DOT__vortex__DOT__g_clusters__BRA__0__KET____DOT__cluster__DOT__g_sockets__BRA__0__KET____DOT__socket__DOT__g_cores__BRA__3__KET____DOT__core__DOT__execute__DOT__tcu_unit__DOT__g_blocks__BRA__0__KET____DOT__tcu_fp__DOT__g_i__BRA__3__KET____DOT__g_j__BRA__0__KET____DOT_____05Fbuffer_ex141__DOT__g_shift_register__DOT__g_shift__DOT__pipe[4U] 
+                                                                   >> 6U)) 
+                                                               << 
+                                                               vlSelf->__PVT__g_prod__BRA__2__KET____DOT__g_tf32_even__DOT__tf32_mul__DOT__g_in_ieee__DOT__from_ieee_a__DOT__clz__DOT__lzc__DOT__g_lzc__DOT__find_first__DOT__d_n
+                                                               [0U]), 1U)
+                                                 : 
+                                                ((vlSymsp->TOP.rtlsim_shim__DOT__vortex__DOT__g_clusters__BRA__0__KET____DOT__cluster__DOT__g_sockets__BRA__0__KET____DOT__socket__DOT__g_cores__BRA__3__KET____DOT__core__DOT__execute__DOT__tcu_unit__DOT__g_blocks__BRA__0__KET____DOT__tcu_fp__DOT__g_i__BRA__3__KET____DOT__g_j__BRA__0__KET____DOT_____05Fbuffer_ex141__DOT__g_shift_register__DOT__g_shift__DOT__pipe[4U] 
+                                                  << 0x1aU) 
+                                                 | (vlSymsp->TOP.rtlsim_shim__DOT__vortex__DOT__g_clusters__BRA__0__KET____DOT__cluster__DOT__g_sockets__BRA__0__KET____DOT__socket__DOT__g_cores__BRA__3__KET____DOT__core__DOT__execute__DOT__tcu_unit__DOT__g_blocks__BRA__0__KET____DOT__tcu_fp__DOT__g_i__BRA__3__KET____DOT__g_j__BRA__0__KET____DOT_____05Fbuffer_ex141__DOT__g_shift_register__DOT__g_shift__DOT__pipe[4U] 
+                                                    >> 6U))));
+    __PVT__g_prod__BRA__2__KET____DOT__g_tf32_even__DOT__tf32_mul__DOT__g_in_ieee__DOT__from_ieee_a__DOT__adjustedExp 
+        = (0x1ffU & (((0U == (0xffU & (vlSymsp->TOP.rtlsim_shim__DOT__vortex__DOT__g_clusters__BRA__0__KET____DOT__cluster__DOT__g_sockets__BRA__0__KET____DOT__socket__DOT__g_cores__BRA__3__KET____DOT__core__DOT__execute__DOT__tcu_unit__DOT__g_blocks__BRA__0__KET____DOT__tcu_fp__DOT__g_i__BRA__3__KET____DOT__g_j__BRA__0__KET____DOT_____05Fbuffer_ex141__DOT__g_shift_register__DOT__g_shift__DOT__pipe[4U] 
+                                       >> 0x10U))) ? 
+                      (0x1f0U | (0xfU & (~ vlSelf->__PVT__g_prod__BRA__2__KET____DOT__g_tf32_even__DOT__tf32_mul__DOT__g_in_ieee__DOT__from_ieee_a__DOT__clz__DOT__lzc__DOT__g_lzc__DOT__find_first__DOT__d_n
+                                         [0U]))) : 
+                      (0xffU & (vlSymsp->TOP.rtlsim_shim__DOT__vortex__DOT__g_clusters__BRA__0__KET____DOT__cluster__DOT__g_sockets__BRA__0__KET____DOT__socket__DOT__g_cores__BRA__3__KET____DOT__core__DOT__execute__DOT__tcu_unit__DOT__g_blocks__BRA__0__KET____DOT__tcu_fp__DOT__g_i__BRA__3__KET____DOT__g_j__BRA__0__KET____DOT_____05Fbuffer_ex141__DOT__g_shift_register__DOT__g_shift__DOT__pipe[4U] 
+                                >> 0x10U))) + (0x80U 
+                                               | ((0U 
+                                                   == 
+                                                   (0xffU 
+                                                    & (vlSymsp->TOP.rtlsim_shim__DOT__vortex__DOT__g_clusters__BRA__0__KET____DOT__cluster__DOT__g_sockets__BRA__0__KET____DOT__socket__DOT__g_cores__BRA__3__KET____DOT__core__DOT__execute__DOT__tcu_unit__DOT__g_blocks__BRA__0__KET____DOT__tcu_fp__DOT__g_i__BRA__3__KET____DOT__g_j__BRA__0__KET____DOT_____05Fbuffer_ex141__DOT__g_shift_register__DOT__g_shift__DOT__pipe[4U] 
+                                                       >> 0x10U)))
+                                                   ? 2U
+                                                   : 1U))));
+    vlSelf->__VdfgTmp_h42bde904__0 = (7U & ((3U == 
+                                             (3U & 
+                                              ((IData)(__PVT__g_prod__BRA__2__KET____DOT__g_tf32_even__DOT__tf32_mul__DOT__g_in_ieee__DOT__from_ieee_a__DOT__adjustedExp) 
+                                               >> 7U)))
+                                             ? (6U 
+                                                | (0U 
+                                                   != 
+                                                   (0x3ffU 
+                                                    & (vlSymsp->TOP.rtlsim_shim__DOT__vortex__DOT__g_clusters__BRA__0__KET____DOT__cluster__DOT__g_sockets__BRA__0__KET____DOT__socket__DOT__g_cores__BRA__3__KET____DOT__core__DOT__execute__DOT__tcu_unit__DOT__g_blocks__BRA__0__KET____DOT__tcu_fp__DOT__g_i__BRA__3__KET____DOT__g_j__BRA__0__KET____DOT_____05Fbuffer_ex141__DOT__g_shift_register__DOT__g_shift__DOT__pipe[4U] 
+                                                       >> 6U))))
+                                             : ((IData)(
+                                                        (0U 
+                                                         == 
+                                                         (0xffffc0U 
+                                                          & vlSymsp->TOP.rtlsim_shim__DOT__vortex__DOT__g_clusters__BRA__0__KET____DOT__cluster__DOT__g_sockets__BRA__0__KET____DOT__socket__DOT__g_cores__BRA__3__KET____DOT__core__DOT__execute__DOT__tcu_unit__DOT__g_blocks__BRA__0__KET____DOT__tcu_fp__DOT__g_i__BRA__3__KET____DOT__g_j__BRA__0__KET____DOT_____05Fbuffer_ex141__DOT__g_shift_register__DOT__g_shift__DOT__pipe[4U])))
+                                                 ? 0U
+                                                 : 
+                                                ((IData)(__PVT__g_prod__BRA__2__KET____DOT__g_tf32_even__DOT__tf32_mul__DOT__g_in_ieee__DOT__from_ieee_a__DOT__adjustedExp) 
+                                                 >> 6U))));
+    vlSelf->__PVT__g_prod__BRA__2__KET____DOT__g_tf32_even__DOT__tf32_mul__DOT__multiplier__DOT__recFNToRawFN_a__DOT__exp 
+        = (((IData)(vlSelf->__VdfgTmp_h42bde904__0) 
+            << 6U) | (0x3fU & (IData)(__PVT__g_prod__BRA__2__KET____DOT__g_tf32_even__DOT__tf32_mul__DOT__g_in_ieee__DOT__from_ieee_a__DOT__adjustedExp)));
+    vlSelf->__PVT__g_prod__BRA__2__KET____DOT__g_tf32_even__DOT__tf32_mul__DOT__multiplier__DOT__isInfA 
+        = ((~ (IData)(vlSelf->__VdfgTmp_h42bde904__0)) 
+           & (3U == VL_SHIFTR_III(32,32,32, (IData)(vlSelf->__PVT__g_prod__BRA__2__KET____DOT__g_tf32_even__DOT__tf32_mul__DOT__multiplier__DOT__recFNToRawFN_a__DOT__exp), 7U)));
+}
+
+VL_ATTR_COLD void Vrtlsim_shim_VX_tcu_fedp_bhf__Ld_N2___stl_comb__TOP__rtlsim_shim__DOT__vortex__DOT__g_clusters__BRA__0__KET____DOT__cluster__DOT__g_sockets__BRA__0__KET____DOT__socket__DOT__g_cores__BRA__3__KET____DOT__core__DOT__execute__DOT__tcu_unit__DOT__g_blocks__BRA__0__KET____DOT__tcu_fp__DOT__g_i__BRA__3__KET____DOT__g_j__BRA__0__KET____DOT__fedp__3(Vrtlsim_shim_VX_tcu_fedp_bhf__Ld_N2* vlSelf) {
+    if (false && vlSelf) {}  // Prevent unused
+    Vrtlsim_shim__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
+    VL_DEBUG_IF(VL_DBG_MSGF("+                      Vrtlsim_shim_VX_tcu_fedp_bhf__Ld_N2___stl_comb__TOP__rtlsim_shim__DOT__vortex__DOT__g_clusters__BRA__0__KET____DOT__cluster__DOT__g_sockets__BRA__0__KET____DOT__socket__DOT__g_cores__BRA__3__KET____DOT__core__DOT__execute__DOT__tcu_unit__DOT__g_blocks__BRA__0__KET____DOT__tcu_fp__DOT__g_i__BRA__3__KET____DOT__g_j__BRA__0__KET____DOT__fedp__3\n"); );
+    // Init
+    SData/*8:0*/ __PVT__g_prod__BRA__0__KET____DOT__g_tf32_even__DOT__tf32_mul__DOT__g_in_ieee__DOT__from_ieee_b__DOT__adjustedExp;
+    __PVT__g_prod__BRA__0__KET____DOT__g_tf32_even__DOT__tf32_mul__DOT__g_in_ieee__DOT__from_ieee_b__DOT__adjustedExp = 0;
+    // Body
+    vlSelf->__VdfgTmp_h2ffd1d50__0 = (0x3ffU & ((0U 
+                                                 == 
+                                                 (0xffU 
+                                                  & (vlSymsp->TOP.rtlsim_shim__DOT__vortex__DOT__g_clusters__BRA__0__KET____DOT__cluster__DOT__g_sockets__BRA__0__KET____DOT__socket__DOT__g_cores__BRA__3__KET____DOT__core__DOT__execute__DOT__tcu_unit__DOT__g_blocks__BRA__0__KET____DOT__tcu_fp__DOT__g_i__BRA__3__KET____DOT__g_j__BRA__0__KET____DOT_____05Fbuffer_ex141__DOT__g_shift_register__DOT__g_shift__DOT__pipe[1U] 
+                                                     >> 0x10U)))
+                                                 ? 
+                                                VL_SHIFTL_III(10,10,32, 
+                                                              (((vlSymsp->TOP.rtlsim_shim__DOT__vortex__DOT__g_clusters__BRA__0__KET____DOT__cluster__DOT__g_sockets__BRA__0__KET____DOT__socket__DOT__g_cores__BRA__3__KET____DOT__core__DOT__execute__DOT__tcu_unit__DOT__g_blocks__BRA__0__KET____DOT__tcu_fp__DOT__g_i__BRA__3__KET____DOT__g_j__BRA__0__KET____DOT_____05Fbuffer_ex141__DOT__g_shift_register__DOT__g_shift__DOT__pipe[1U] 
+                                                                 << 0x1aU) 
+                                                                | (vlSymsp->TOP.rtlsim_shim__DOT__vortex__DOT__g_clusters__BRA__0__KET____DOT__cluster__DOT__g_sockets__BRA__0__KET____DOT__socket__DOT__g_cores__BRA__3__KET____DOT__core__DOT__execute__DOT__tcu_unit__DOT__g_blocks__BRA__0__KET____DOT__tcu_fp__DOT__g_i__BRA__3__KET____DOT__g_j__BRA__0__KET____DOT_____05Fbuffer_ex141__DOT__g_shift_register__DOT__g_shift__DOT__pipe[1U] 
+                                                                   >> 6U)) 
+                                                               << 
+                                                               vlSelf->__PVT__g_prod__BRA__0__KET____DOT__g_tf32_even__DOT__tf32_mul__DOT__g_in_ieee__DOT__from_ieee_b__DOT__clz__DOT__lzc__DOT__g_lzc__DOT__find_first__DOT__d_n
+                                                               [0U]), 1U)
+                                                 : 
+                                                ((vlSymsp->TOP.rtlsim_shim__DOT__vortex__DOT__g_clusters__BRA__0__KET____DOT__cluster__DOT__g_sockets__BRA__0__KET____DOT__socket__DOT__g_cores__BRA__3__KET____DOT__core__DOT__execute__DOT__tcu_unit__DOT__g_blocks__BRA__0__KET____DOT__tcu_fp__DOT__g_i__BRA__3__KET____DOT__g_j__BRA__0__KET____DOT_____05Fbuffer_ex141__DOT__g_shift_register__DOT__g_shift__DOT__pipe[1U] 
+                                                  << 0x1aU) 
+                                                 | (vlSymsp->TOP.rtlsim_shim__DOT__vortex__DOT__g_clusters__BRA__0__KET____DOT__cluster__DOT__g_sockets__BRA__0__KET____DOT__socket__DOT__g_cores__BRA__3__KET____DOT__core__DOT__execute__DOT__tcu_unit__DOT__g_blocks__BRA__0__KET____DOT__tcu_fp__DOT__g_i__BRA__3__KET____DOT__g_j__BRA__0__KET____DOT_____05Fbuffer_ex141__DOT__g_shift_register__DOT__g_shift__DOT__pipe[1U] 
+                                                    >> 6U))));
+    __PVT__g_prod__BRA__0__KET____DOT__g_tf32_even__DOT__tf32_mul__DOT__g_in_ieee__DOT__from_ieee_b__DOT__adjustedExp 
+        = (0x1ffU & (((0U == (0xffU & (vlSymsp->TOP.rtlsim_shim__DOT__vortex__DOT__g_clusters__BRA__0__KET____DOT__cluster__DOT__g_sockets__BRA__0__KET____DOT__socket__DOT__g_cores__BRA__3__KET____DOT__core__DOT__execute__DOT__tcu_unit__DOT__g_blocks__BRA__0__KET____DOT__tcu_fp__DOT__g_i__BRA__3__KET____DOT__g_j__BRA__0__KET____DOT_____05Fbuffer_ex141__DOT__g_shift_register__DOT__g_shift__DOT__pipe[1U] 
+                                       >> 0x10U))) ? 
+                      (0x1f0U | (0xfU & (~ vlSelf->__PVT__g_prod__BRA__0__KET____DOT__g_tf32_even__DOT__tf32_mul__DOT__g_in_ieee__DOT__from_ieee_b__DOT__clz__DOT__lzc__DOT__g_lzc__DOT__find_first__DOT__d_n
+                                         [0U]))) : 
+                      (0xffU & (vlSymsp->TOP.rtlsim_shim__DOT__vortex__DOT__g_clusters__BRA__0__KET____DOT__cluster__DOT__g_sockets__BRA__0__KET____DOT__socket__DOT__g_cores__BRA__3__KET____DOT__core__DOT__execute__DOT__tcu_unit__DOT__g_blocks__BRA__0__KET____DOT__tcu_fp__DOT__g_i__BRA__3__KET____DOT__g_j__BRA__0__KET____DOT_____05Fbuffer_ex141__DOT__g_shift_register__DOT__g_shift__DOT__pipe[1U] 
+                                >> 0x10U))) + (0x80U 
+                                               | ((0U 
+                                                   == 
+                                                   (0xffU 
+                                                    & (vlSymsp->TOP.rtlsim_shim__DOT__vortex__DOT__g_clusters__BRA__0__KET____DOT__cluster__DOT__g_sockets__BRA__0__KET____DOT__socket__DOT__g_cores__BRA__3__KET____DOT__core__DOT__execute__DOT__tcu_unit__DOT__g_blocks__BRA__0__KET____DOT__tcu_fp__DOT__g_i__BRA__3__KET____DOT__g_j__BRA__0__KET____DOT_____05Fbuffer_ex141__DOT__g_shift_register__DOT__g_shift__DOT__pipe[1U] 
+                                                       >> 0x10U)))
+                                                   ? 2U
+                                                   : 1U))));
+    vlSelf->__VdfgTmp_h96380549__0 = (7U & ((3U == 
+                                             (3U & 
+                                              ((IData)(__PVT__g_prod__BRA__0__KET____DOT__g_tf32_even__DOT__tf32_mul__DOT__g_in_ieee__DOT__from_ieee_b__DOT__adjustedExp) 
+                                               >> 7U)))
+                                             ? (6U 
+                                                | (0U 
+                                                   != 
+                                                   (0x3ffU 
+                                                    & (vlSymsp->TOP.rtlsim_shim__DOT__vortex__DOT__g_clusters__BRA__0__KET____DOT__cluster__DOT__g_sockets__BRA__0__KET____DOT__socket__DOT__g_cores__BRA__3__KET____DOT__core__DOT__execute__DOT__tcu_unit__DOT__g_blocks__BRA__0__KET____DOT__tcu_fp__DOT__g_i__BRA__3__KET____DOT__g_j__BRA__0__KET____DOT_____05Fbuffer_ex141__DOT__g_shift_register__DOT__g_shift__DOT__pipe[1U] 
+                                                       >> 6U))))
+                                             : ((IData)(
+                                                        (0U 
+                                                         == 
+                                                         (0xffffc0U 
+                                                          & vlSymsp->TOP.rtlsim_shim__DOT__vortex__DOT__g_clusters__BRA__0__KET____DOT__cluster__DOT__g_sockets__BRA__0__KET____DOT__socket__DOT__g_cores__BRA__3__KET____DOT__core__DOT__execute__DOT__tcu_unit__DOT__g_blocks__BRA__0__KET____DOT__tcu_fp__DOT__g_i__BRA__3__KET____DOT__g_j__BRA__0__KET____DOT_____05Fbuffer_ex141__DOT__g_shift_register__DOT__g_shift__DOT__pipe[1U])))
+                                                 ? 0U
+                                                 : 
+                                                ((IData)(__PVT__g_prod__BRA__0__KET____DOT__g_tf32_even__DOT__tf32_mul__DOT__g_in_ieee__DOT__from_ieee_b__DOT__adjustedExp) 
+                                                 >> 6U))));
+    vlSelf->__PVT__g_prod__BRA__0__KET____DOT__g_tf32_even__DOT__tf32_mul__DOT__multiplier__DOT__recFNToRawFN_b__DOT__exp 
+        = (((IData)(vlSelf->__VdfgTmp_h96380549__0) 
+            << 6U) | (0x3fU & (IData)(__PVT__g_prod__BRA__0__KET____DOT__g_tf32_even__DOT__tf32_mul__DOT__g_in_ieee__DOT__from_ieee_b__DOT__adjustedExp)));
+    vlSelf->__PVT__g_prod__BRA__0__KET____DOT__g_tf32_even__DOT__tf32_mul__DOT__multiplier__DOT__isInfB 
+        = ((~ (IData)(vlSelf->__VdfgTmp_h96380549__0)) 
+           & (3U == VL_SHIFTR_III(32,32,32, (IData)(vlSelf->__PVT__g_prod__BRA__0__KET____DOT__g_tf32_even__DOT__tf32_mul__DOT__multiplier__DOT__recFNToRawFN_b__DOT__exp), 7U)));
+}
+
+VL_ATTR_COLD void Vrtlsim_shim_VX_tcu_fedp_bhf__Ld_N2___stl_comb__TOP__rtlsim_shim__DOT__vortex__DOT__g_clusters__BRA__0__KET____DOT__cluster__DOT__g_sockets__BRA__0__KET____DOT__socket__DOT__g_cores__BRA__3__KET____DOT__core__DOT__execute__DOT__tcu_unit__DOT__g_blocks__BRA__0__KET____DOT__tcu_fp__DOT__g_i__BRA__3__KET____DOT__g_j__BRA__0__KET____DOT__fedp__4(Vrtlsim_shim_VX_tcu_fedp_bhf__Ld_N2* vlSelf) {
+    if (false && vlSelf) {}  // Prevent unused
+    Vrtlsim_shim__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
+    VL_DEBUG_IF(VL_DBG_MSGF("+                      Vrtlsim_shim_VX_tcu_fedp_bhf__Ld_N2___stl_comb__TOP__rtlsim_shim__DOT__vortex__DOT__g_clusters__BRA__0__KET____DOT__cluster__DOT__g_sockets__BRA__0__KET____DOT__socket__DOT__g_cores__BRA__3__KET____DOT__core__DOT__execute__DOT__tcu_unit__DOT__g_blocks__BRA__0__KET____DOT__tcu_fp__DOT__g_i__BRA__3__KET____DOT__g_j__BRA__0__KET____DOT__fedp__4\n"); );
+    // Init
+    SData/*8:0*/ __PVT__g_prod__BRA__2__KET____DOT__g_tf32_even__DOT__tf32_mul__DOT__g_in_ieee__DOT__from_ieee_b__DOT__adjustedExp;
+    __PVT__g_prod__BRA__2__KET____DOT__g_tf32_even__DOT__tf32_mul__DOT__g_in_ieee__DOT__from_ieee_b__DOT__adjustedExp = 0;
+    // Body
+    vlSelf->__VdfgTmp_he3a483a4__0 = (0x3ffU & ((0U 
+                                                 == 
+                                                 (0xffU 
+                                                  & (vlSymsp->TOP.rtlsim_shim__DOT__vortex__DOT__g_clusters__BRA__0__KET____DOT__cluster__DOT__g_sockets__BRA__0__KET____DOT__socket__DOT__g_cores__BRA__3__KET____DOT__core__DOT__execute__DOT__tcu_unit__DOT__g_blocks__BRA__0__KET____DOT__tcu_fp__DOT__g_i__BRA__3__KET____DOT__g_j__BRA__0__KET____DOT_____05Fbuffer_ex141__DOT__g_shift_register__DOT__g_shift__DOT__pipe[2U] 
+                                                     >> 0x10U)))
+                                                 ? 
+                                                VL_SHIFTL_III(10,10,32, 
+                                                              (((vlSymsp->TOP.rtlsim_shim__DOT__vortex__DOT__g_clusters__BRA__0__KET____DOT__cluster__DOT__g_sockets__BRA__0__KET____DOT__socket__DOT__g_cores__BRA__3__KET____DOT__core__DOT__execute__DOT__tcu_unit__DOT__g_blocks__BRA__0__KET____DOT__tcu_fp__DOT__g_i__BRA__3__KET____DOT__g_j__BRA__0__KET____DOT_____05Fbuffer_ex141__DOT__g_shift_register__DOT__g_shift__DOT__pipe[2U] 
+                                                                 << 0x1aU) 
+                                                                | (vlSymsp->TOP.rtlsim_shim__DOT__vortex__DOT__g_clusters__BRA__0__KET____DOT__cluster__DOT__g_sockets__BRA__0__KET____DOT__socket__DOT__g_cores__BRA__3__KET____DOT__core__DOT__execute__DOT__tcu_unit__DOT__g_blocks__BRA__0__KET____DOT__tcu_fp__DOT__g_i__BRA__3__KET____DOT__g_j__BRA__0__KET____DOT_____05Fbuffer_ex141__DOT__g_shift_register__DOT__g_shift__DOT__pipe[2U] 
+                                                                   >> 6U)) 
+                                                               << 
+                                                               vlSelf->__PVT__g_prod__BRA__2__KET____DOT__g_tf32_even__DOT__tf32_mul__DOT__g_in_ieee__DOT__from_ieee_b__DOT__clz__DOT__lzc__DOT__g_lzc__DOT__find_first__DOT__d_n
+                                                               [0U]), 1U)
+                                                 : 
+                                                ((vlSymsp->TOP.rtlsim_shim__DOT__vortex__DOT__g_clusters__BRA__0__KET____DOT__cluster__DOT__g_sockets__BRA__0__KET____DOT__socket__DOT__g_cores__BRA__3__KET____DOT__core__DOT__execute__DOT__tcu_unit__DOT__g_blocks__BRA__0__KET____DOT__tcu_fp__DOT__g_i__BRA__3__KET____DOT__g_j__BRA__0__KET____DOT_____05Fbuffer_ex141__DOT__g_shift_register__DOT__g_shift__DOT__pipe[2U] 
+                                                  << 0x1aU) 
+                                                 | (vlSymsp->TOP.rtlsim_shim__DOT__vortex__DOT__g_clusters__BRA__0__KET____DOT__cluster__DOT__g_sockets__BRA__0__KET____DOT__socket__DOT__g_cores__BRA__3__KET____DOT__core__DOT__execute__DOT__tcu_unit__DOT__g_blocks__BRA__0__KET____DOT__tcu_fp__DOT__g_i__BRA__3__KET____DOT__g_j__BRA__0__KET____DOT_____05Fbuffer_ex141__DOT__g_shift_register__DOT__g_shift__DOT__pipe[2U] 
+                                                    >> 6U))));
+    __PVT__g_prod__BRA__2__KET____DOT__g_tf32_even__DOT__tf32_mul__DOT__g_in_ieee__DOT__from_ieee_b__DOT__adjustedExp 
+        = (0x1ffU & (((0U == (0xffU & (vlSymsp->TOP.rtlsim_shim__DOT__vortex__DOT__g_clusters__BRA__0__KET____DOT__cluster__DOT__g_sockets__BRA__0__KET____DOT__socket__DOT__g_cores__BRA__3__KET____DOT__core__DOT__execute__DOT__tcu_unit__DOT__g_blocks__BRA__0__KET____DOT__tcu_fp__DOT__g_i__BRA__3__KET____DOT__g_j__BRA__0__KET____DOT_____05Fbuffer_ex141__DOT__g_shift_register__DOT__g_shift__DOT__pipe[2U] 
+                                       >> 0x10U))) ? 
+                      (0x1f0U | (0xfU & (~ vlSelf->__PVT__g_prod__BRA__2__KET____DOT__g_tf32_even__DOT__tf32_mul__DOT__g_in_ieee__DOT__from_ieee_b__DOT__clz__DOT__lzc__DOT__g_lzc__DOT__find_first__DOT__d_n
+                                         [0U]))) : 
+                      (0xffU & (vlSymsp->TOP.rtlsim_shim__DOT__vortex__DOT__g_clusters__BRA__0__KET____DOT__cluster__DOT__g_sockets__BRA__0__KET____DOT__socket__DOT__g_cores__BRA__3__KET____DOT__core__DOT__execute__DOT__tcu_unit__DOT__g_blocks__BRA__0__KET____DOT__tcu_fp__DOT__g_i__BRA__3__KET____DOT__g_j__BRA__0__KET____DOT_____05Fbuffer_ex141__DOT__g_shift_register__DOT__g_shift__DOT__pipe[2U] 
+                                >> 0x10U))) + (0x80U 
+                                               | ((0U 
+                                                   == 
+                                                   (0xffU 
+                                                    & (vlSymsp->TOP.rtlsim_shim__DOT__vortex__DOT__g_clusters__BRA__0__KET____DOT__cluster__DOT__g_sockets__BRA__0__KET____DOT__socket__DOT__g_cores__BRA__3__KET____DOT__core__DOT__execute__DOT__tcu_unit__DOT__g_blocks__BRA__0__KET____DOT__tcu_fp__DOT__g_i__BRA__3__KET____DOT__g_j__BRA__0__KET____DOT_____05Fbuffer_ex141__DOT__g_shift_register__DOT__g_shift__DOT__pipe[2U] 
+                                                       >> 0x10U)))
+                                                   ? 2U
+                                                   : 1U))));
+    vlSelf->__VdfgTmp_h3491cac1__0 = (7U & ((3U == 
+                                             (3U & 
+                                              ((IData)(__PVT__g_prod__BRA__2__KET____DOT__g_tf32_even__DOT__tf32_mul__DOT__g_in_ieee__DOT__from_ieee_b__DOT__adjustedExp) 
+                                               >> 7U)))
+                                             ? (6U 
+                                                | (0U 
+                                                   != 
+                                                   (0x3ffU 
+                                                    & (vlSymsp->TOP.rtlsim_shim__DOT__vortex__DOT__g_clusters__BRA__0__KET____DOT__cluster__DOT__g_sockets__BRA__0__KET____DOT__socket__DOT__g_cores__BRA__3__KET____DOT__core__DOT__execute__DOT__tcu_unit__DOT__g_blocks__BRA__0__KET____DOT__tcu_fp__DOT__g_i__BRA__3__KET____DOT__g_j__BRA__0__KET____DOT_____05Fbuffer_ex141__DOT__g_shift_register__DOT__g_shift__DOT__pipe[2U] 
+                                                       >> 6U))))
+                                             : ((IData)(
+                                                        (0U 
+                                                         == 
+                                                         (0xffffc0U 
+                                                          & vlSymsp->TOP.rtlsim_shim__DOT__vortex__DOT__g_clusters__BRA__0__KET____DOT__cluster__DOT__g_sockets__BRA__0__KET____DOT__socket__DOT__g_cores__BRA__3__KET____DOT__core__DOT__execute__DOT__tcu_unit__DOT__g_blocks__BRA__0__KET____DOT__tcu_fp__DOT__g_i__BRA__3__KET____DOT__g_j__BRA__0__KET____DOT_____05Fbuffer_ex141__DOT__g_shift_register__DOT__g_shift__DOT__pipe[2U])))
+                                                 ? 0U
+                                                 : 
+                                                ((IData)(__PVT__g_prod__BRA__2__KET____DOT__g_tf32_even__DOT__tf32_mul__DOT__g_in_ieee__DOT__from_ieee_b__DOT__adjustedExp) 
+                                                 >> 6U))));
+    vlSelf->__PVT__g_prod__BRA__2__KET____DOT__g_tf32_even__DOT__tf32_mul__DOT__multiplier__DOT__recFNToRawFN_b__DOT__exp 
+        = (((IData)(vlSelf->__VdfgTmp_h3491cac1__0) 
+            << 6U) | (0x3fU & (IData)(__PVT__g_prod__BRA__2__KET____DOT__g_tf32_even__DOT__tf32_mul__DOT__g_in_ieee__DOT__from_ieee_b__DOT__adjustedExp)));
+    vlSelf->__PVT__g_prod__BRA__2__KET____DOT__g_tf32_even__DOT__tf32_mul__DOT__multiplier__DOT__isInfB 
+        = ((~ (IData)(vlSelf->__VdfgTmp_h3491cac1__0)) 
+           & (3U == VL_SHIFTR_III(32,32,32, (IData)(vlSelf->__PVT__g_prod__BRA__2__KET____DOT__g_tf32_even__DOT__tf32_mul__DOT__multiplier__DOT__recFNToRawFN_b__DOT__exp), 7U)));
+}
+
+VL_ATTR_COLD void Vrtlsim_shim_VX_tcu_fedp_bhf__Ld_N2___stl_comb__TOP__rtlsim_shim__DOT__vortex__DOT__g_clusters__BRA__0__KET____DOT__cluster__DOT__g_sockets__BRA__0__KET____DOT__socket__DOT__g_cores__BRA__3__KET____DOT__core__DOT__execute__DOT__tcu_unit__DOT__g_blocks__BRA__0__KET____DOT__tcu_fp__DOT__g_i__BRA__3__KET____DOT__g_j__BRA__1__KET____DOT__fedp__0(Vrtlsim_shim_VX_tcu_fedp_bhf__Ld_N2* vlSelf) {
+    if (false && vlSelf) {}  // Prevent unused
+    Vrtlsim_shim__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
+    VL_DEBUG_IF(VL_DBG_MSGF("+                      Vrtlsim_shim_VX_tcu_fedp_bhf__Ld_N2___stl_comb__TOP__rtlsim_shim__DOT__vortex__DOT__g_clusters__BRA__0__KET____DOT__cluster__DOT__g_sockets__BRA__0__KET____DOT__socket__DOT__g_cores__BRA__3__KET____DOT__core__DOT__execute__DOT__tcu_unit__DOT__g_blocks__BRA__0__KET____DOT__tcu_fp__DOT__g_i__BRA__3__KET____DOT__g_j__BRA__1__KET____DOT__fedp__0\n"); );
+    // Body
+    vlSelf->__PVT__conv_c__DOT__adjustedExp = (0x1ffU 
+                                               & (((0U 
+                                                    == 
+                                                    (0xffU 
+                                                     & ((vlSymsp->TOP.rtlsim_shim__DOT__vortex__DOT__g_clusters__BRA__0__KET____DOT__cluster__DOT__g_sockets__BRA__0__KET____DOT__socket__DOT__g_cores__BRA__3__KET____DOT__core__DOT__execute__DOT__tcu_unit__DOT__g_blocks__BRA__0__KET____DOT__tcu_fp__DOT__g_i__BRA__3__KET____DOT__g_j__BRA__1__KET____DOT_____05Fbuffer_ex141__DOT__g_shift_register__DOT__g_shift__DOT__pipe[1U] 
+                                                         << 3U) 
+                                                        | (vlSymsp->TOP.rtlsim_shim__DOT__vortex__DOT__g_clusters__BRA__0__KET____DOT__cluster__DOT__g_sockets__BRA__0__KET____DOT__socket__DOT__g_cores__BRA__3__KET____DOT__core__DOT__execute__DOT__tcu_unit__DOT__g_blocks__BRA__0__KET____DOT__tcu_fp__DOT__g_i__BRA__3__KET____DOT__g_j__BRA__1__KET____DOT_____05Fbuffer_ex141__DOT__g_shift_register__DOT__g_shift__DOT__pipe[0U] 
+                                                           >> 0x1dU))))
+                                                    ? 
+                                                   (0x1e0U 
+                                                    | (0x1fU 
+                                                       & (~ 
+                                                          vlSelf->__PVT__conv_c__DOT__clz__DOT__lzc__DOT__g_lzc__DOT__find_first__DOT__d_n
+                                                          [0U])))
+                                                    : 
+                                                   (0xffU 
+                                                    & ((vlSymsp->TOP.rtlsim_shim__DOT__vortex__DOT__g_clusters__BRA__0__KET____DOT__cluster__DOT__g_sockets__BRA__0__KET____DOT__socket__DOT__g_cores__BRA__3__KET____DOT__core__DOT__execute__DOT__tcu_unit__DOT__g_blocks__BRA__0__KET____DOT__tcu_fp__DOT__g_i__BRA__3__KET____DOT__g_j__BRA__1__KET____DOT_____05Fbuffer_ex141__DOT__g_shift_register__DOT__g_shift__DOT__pipe[1U] 
+                                                        << 3U) 
+                                                       | (vlSymsp->TOP.rtlsim_shim__DOT__vortex__DOT__g_clusters__BRA__0__KET____DOT__cluster__DOT__g_sockets__BRA__0__KET____DOT__socket__DOT__g_cores__BRA__3__KET____DOT__core__DOT__execute__DOT__tcu_unit__DOT__g_blocks__BRA__0__KET____DOT__tcu_fp__DOT__g_i__BRA__3__KET____DOT__g_j__BRA__1__KET____DOT_____05Fbuffer_ex141__DOT__g_shift_register__DOT__g_shift__DOT__pipe[0U] 
+                                                          >> 0x1dU)))) 
+                                                  + 
+                                                  (0x80U 
+                                                   | ((0U 
+                                                       == 
+                                                       (0xffU 
+                                                        & ((vlSymsp->TOP.rtlsim_shim__DOT__vortex__DOT__g_clusters__BRA__0__KET____DOT__cluster__DOT__g_sockets__BRA__0__KET____DOT__socket__DOT__g_cores__BRA__3__KET____DOT__core__DOT__execute__DOT__tcu_unit__DOT__g_blocks__BRA__0__KET____DOT__tcu_fp__DOT__g_i__BRA__3__KET____DOT__g_j__BRA__1__KET____DOT_____05Fbuffer_ex141__DOT__g_shift_register__DOT__g_shift__DOT__pipe[1U] 
+                                                            << 3U) 
+                                                           | (vlSymsp->TOP.rtlsim_shim__DOT__vortex__DOT__g_clusters__BRA__0__KET____DOT__cluster__DOT__g_sockets__BRA__0__KET____DOT__socket__DOT__g_cores__BRA__3__KET____DOT__core__DOT__execute__DOT__tcu_unit__DOT__g_blocks__BRA__0__KET____DOT__tcu_fp__DOT__g_i__BRA__3__KET____DOT__g_j__BRA__1__KET____DOT_____05Fbuffer_ex141__DOT__g_shift_register__DOT__g_shift__DOT__pipe[0U] 
+                                                              >> 0x1dU))))
+                                                       ? 2U
+                                                       : 1U))));
+}
+
+VL_ATTR_COLD void Vrtlsim_shim_VX_tcu_fedp_bhf__Ld_N2___stl_comb__TOP__rtlsim_shim__DOT__vortex__DOT__g_clusters__BRA__0__KET____DOT__cluster__DOT__g_sockets__BRA__0__KET____DOT__socket__DOT__g_cores__BRA__3__KET____DOT__core__DOT__execute__DOT__tcu_unit__DOT__g_blocks__BRA__0__KET____DOT__tcu_fp__DOT__g_i__BRA__3__KET____DOT__g_j__BRA__1__KET____DOT__fedp__1(Vrtlsim_shim_VX_tcu_fedp_bhf__Ld_N2* vlSelf) {
+    if (false && vlSelf) {}  // Prevent unused
+    Vrtlsim_shim__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
+    VL_DEBUG_IF(VL_DBG_MSGF("+                      Vrtlsim_shim_VX_tcu_fedp_bhf__Ld_N2___stl_comb__TOP__rtlsim_shim__DOT__vortex__DOT__g_clusters__BRA__0__KET____DOT__cluster__DOT__g_sockets__BRA__0__KET____DOT__socket__DOT__g_cores__BRA__3__KET____DOT__core__DOT__execute__DOT__tcu_unit__DOT__g_blocks__BRA__0__KET____DOT__tcu_fp__DOT__g_i__BRA__3__KET____DOT__g_j__BRA__1__KET____DOT__fedp__1\n"); );
+    // Init
+    SData/*8:0*/ __PVT__g_prod__BRA__0__KET____DOT__g_tf32_even__DOT__tf32_mul__DOT__g_in_ieee__DOT__from_ieee_a__DOT__adjustedExp;
+    __PVT__g_prod__BRA__0__KET____DOT__g_tf32_even__DOT__tf32_mul__DOT__g_in_ieee__DOT__from_ieee_a__DOT__adjustedExp = 0;
+    // Body
+    vlSelf->__VdfgTmp_hf2991b4d__0 = (0x3ffU & ((0U 
+                                                 == 
+                                                 (0xffU 
+                                                  & (vlSymsp->TOP.rtlsim_shim__DOT__vortex__DOT__g_clusters__BRA__0__KET____DOT__cluster__DOT__g_sockets__BRA__0__KET____DOT__socket__DOT__g_cores__BRA__3__KET____DOT__core__DOT__execute__DOT__tcu_unit__DOT__g_blocks__BRA__0__KET____DOT__tcu_fp__DOT__g_i__BRA__3__KET____DOT__g_j__BRA__1__KET____DOT_____05Fbuffer_ex141__DOT__g_shift_register__DOT__g_shift__DOT__pipe[3U] 
+                                                     >> 0x10U)))
+                                                 ? 
+                                                VL_SHIFTL_III(10,10,32, 
+                                                              (((vlSymsp->TOP.rtlsim_shim__DOT__vortex__DOT__g_clusters__BRA__0__KET____DOT__cluster__DOT__g_sockets__BRA__0__KET____DOT__socket__DOT__g_cores__BRA__3__KET____DOT__core__DOT__execute__DOT__tcu_unit__DOT__g_blocks__BRA__0__KET____DOT__tcu_fp__DOT__g_i__BRA__3__KET____DOT__g_j__BRA__1__KET____DOT_____05Fbuffer_ex141__DOT__g_shift_register__DOT__g_shift__DOT__pipe[3U] 
+                                                                 << 0x1aU) 
+                                                                | (vlSymsp->TOP.rtlsim_shim__DOT__vortex__DOT__g_clusters__BRA__0__KET____DOT__cluster__DOT__g_sockets__BRA__0__KET____DOT__socket__DOT__g_cores__BRA__3__KET____DOT__core__DOT__execute__DOT__tcu_unit__DOT__g_blocks__BRA__0__KET____DOT__tcu_fp__DOT__g_i__BRA__3__KET____DOT__g_j__BRA__1__KET____DOT_____05Fbuffer_ex141__DOT__g_shift_register__DOT__g_shift__DOT__pipe[3U] 
+                                                                   >> 6U)) 
+                                                               << 
+                                                               vlSelf->__PVT__g_prod__BRA__0__KET____DOT__g_tf32_even__DOT__tf32_mul__DOT__g_in_ieee__DOT__from_ieee_a__DOT__clz__DOT__lzc__DOT__g_lzc__DOT__find_first__DOT__d_n
+                                                               [0U]), 1U)
+                                                 : 
+                                                ((vlSymsp->TOP.rtlsim_shim__DOT__vortex__DOT__g_clusters__BRA__0__KET____DOT__cluster__DOT__g_sockets__BRA__0__KET____DOT__socket__DOT__g_cores__BRA__3__KET____DOT__core__DOT__execute__DOT__tcu_unit__DOT__g_blocks__BRA__0__KET____DOT__tcu_fp__DOT__g_i__BRA__3__KET____DOT__g_j__BRA__1__KET____DOT_____05Fbuffer_ex141__DOT__g_shift_register__DOT__g_shift__DOT__pipe[3U] 
+                                                  << 0x1aU) 
+                                                 | (vlSymsp->TOP.rtlsim_shim__DOT__vortex__DOT__g_clusters__BRA__0__KET____DOT__cluster__DOT__g_sockets__BRA__0__KET____DOT__socket__DOT__g_cores__BRA__3__KET____DOT__core__DOT__execute__DOT__tcu_unit__DOT__g_blocks__BRA__0__KET____DOT__tcu_fp__DOT__g_i__BRA__3__KET____DOT__g_j__BRA__1__KET____DOT_____05Fbuffer_ex141__DOT__g_shift_register__DOT__g_shift__DOT__pipe[3U] 
+                                                    >> 6U))));
+    __PVT__g_prod__BRA__0__KET____DOT__g_tf32_even__DOT__tf32_mul__DOT__g_in_ieee__DOT__from_ieee_a__DOT__adjustedExp 
+        = (0x1ffU & (((0U == (0xffU & (vlSymsp->TOP.rtlsim_shim__DOT__vortex__DOT__g_clusters__BRA__0__KET____DOT__cluster__DOT__g_sockets__BRA__0__KET____DOT__socket__DOT__g_cores__BRA__3__KET____DOT__core__DOT__execute__DOT__tcu_unit__DOT__g_blocks__BRA__0__KET____DOT__tcu_fp__DOT__g_i__BRA__3__KET____DOT__g_j__BRA__1__KET____DOT_____05Fbuffer_ex141__DOT__g_shift_register__DOT__g_shift__DOT__pipe[3U] 
+                                       >> 0x10U))) ? 
+                      (0x1f0U | (0xfU & (~ vlSelf->__PVT__g_prod__BRA__0__KET____DOT__g_tf32_even__DOT__tf32_mul__DOT__g_in_ieee__DOT__from_ieee_a__DOT__clz__DOT__lzc__DOT__g_lzc__DOT__find_first__DOT__d_n
+                                         [0U]))) : 
+                      (0xffU & (vlSymsp->TOP.rtlsim_shim__DOT__vortex__DOT__g_clusters__BRA__0__KET____DOT__cluster__DOT__g_sockets__BRA__0__KET____DOT__socket__DOT__g_cores__BRA__3__KET____DOT__core__DOT__execute__DOT__tcu_unit__DOT__g_blocks__BRA__0__KET____DOT__tcu_fp__DOT__g_i__BRA__3__KET____DOT__g_j__BRA__1__KET____DOT_____05Fbuffer_ex141__DOT__g_shift_register__DOT__g_shift__DOT__pipe[3U] 
+                                >> 0x10U))) + (0x80U 
+                                               | ((0U 
+                                                   == 
+                                                   (0xffU 
+                                                    & (vlSymsp->TOP.rtlsim_shim__DOT__vortex__DOT__g_clusters__BRA__0__KET____DOT__cluster__DOT__g_sockets__BRA__0__KET____DOT__socket__DOT__g_cores__BRA__3__KET____DOT__core__DOT__execute__DOT__tcu_unit__DOT__g_blocks__BRA__0__KET____DOT__tcu_fp__DOT__g_i__BRA__3__KET____DOT__g_j__BRA__1__KET____DOT_____05Fbuffer_ex141__DOT__g_shift_register__DOT__g_shift__DOT__pipe[3U] 
+                                                       >> 0x10U)))
+                                                   ? 2U
+                                                   : 1U))));
+    vlSelf->__VdfgTmp_h5ed1b8fd__0 = (7U & ((3U == 
+                                             (3U & 
+                                              ((IData)(__PVT__g_prod__BRA__0__KET____DOT__g_tf32_even__DOT__tf32_mul__DOT__g_in_ieee__DOT__from_ieee_a__DOT__adjustedExp) 
+                                               >> 7U)))
+                                             ? (6U 
+                                                | (0U 
+                                                   != 
+                                                   (0x3ffU 
+                                                    & (vlSymsp->TOP.rtlsim_shim__DOT__vortex__DOT__g_clusters__BRA__0__KET____DOT__cluster__DOT__g_sockets__BRA__0__KET____DOT__socket__DOT__g_cores__BRA__3__KET____DOT__core__DOT__execute__DOT__tcu_unit__DOT__g_blocks__BRA__0__KET____DOT__tcu_fp__DOT__g_i__BRA__3__KET____DOT__g_j__BRA__1__KET____DOT_____05Fbuffer_ex141__DOT__g_shift_register__DOT__g_shift__DOT__pipe[3U] 
+                                                       >> 6U))))
+                                             : ((IData)(
+                                                        (0U 
+                                                         == 
+                                                         (0xffffc0U 
+                                                          & vlSymsp->TOP.rtlsim_shim__DOT__vortex__DOT__g_clusters__BRA__0__KET____DOT__cluster__DOT__g_sockets__BRA__0__KET____DOT__socket__DOT__g_cores__BRA__3__KET____DOT__core__DOT__execute__DOT__tcu_unit__DOT__g_blocks__BRA__0__KET____DOT__tcu_fp__DOT__g_i__BRA__3__KET____DOT__g_j__BRA__1__KET____DOT_____05Fbuffer_ex141__DOT__g_shift_register__DOT__g_shift__DOT__pipe[3U])))
+                                                 ? 0U
+                                                 : 
+                                                ((IData)(__PVT__g_prod__BRA__0__KET____DOT__g_tf32_even__DOT__tf32_mul__DOT__g_in_ieee__DOT__from_ieee_a__DOT__adjustedExp) 
+                                                 >> 6U))));
+    vlSelf->__PVT__g_prod__BRA__0__KET____DOT__g_tf32_even__DOT__tf32_mul__DOT__multiplier__DOT__recFNToRawFN_a__DOT__exp 
+        = (((IData)(vlSelf->__VdfgTmp_h5ed1b8fd__0) 
+            << 6U) | (0x3fU & (IData)(__PVT__g_prod__BRA__0__KET____DOT__g_tf32_even__DOT__tf32_mul__DOT__g_in_ieee__DOT__from_ieee_a__DOT__adjustedExp)));
+    vlSelf->__PVT__g_prod__BRA__0__KET____DOT__g_tf32_even__DOT__tf32_mul__DOT__multiplier__DOT__isInfA 
+        = ((~ (IData)(vlSelf->__VdfgTmp_h5ed1b8fd__0)) 
+           & (3U == VL_SHIFTR_III(32,32,32, (IData)(vlSelf->__PVT__g_prod__BRA__0__KET____DOT__g_tf32_even__DOT__tf32_mul__DOT__multiplier__DOT__recFNToRawFN_a__DOT__exp), 7U)));
+}
+
+VL_ATTR_COLD void Vrtlsim_shim_VX_tcu_fedp_bhf__Ld_N2___stl_comb__TOP__rtlsim_shim__DOT__vortex__DOT__g_clusters__BRA__0__KET____DOT__cluster__DOT__g_sockets__BRA__0__KET____DOT__socket__DOT__g_cores__BRA__3__KET____DOT__core__DOT__execute__DOT__tcu_unit__DOT__g_blocks__BRA__0__KET____DOT__tcu_fp__DOT__g_i__BRA__3__KET____DOT__g_j__BRA__1__KET____DOT__fedp__2(Vrtlsim_shim_VX_tcu_fedp_bhf__Ld_N2* vlSelf) {
+    if (false && vlSelf) {}  // Prevent unused
+    Vrtlsim_shim__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
+    VL_DEBUG_IF(VL_DBG_MSGF("+                      Vrtlsim_shim_VX_tcu_fedp_bhf__Ld_N2___stl_comb__TOP__rtlsim_shim__DOT__vortex__DOT__g_clusters__BRA__0__KET____DOT__cluster__DOT__g_sockets__BRA__0__KET____DOT__socket__DOT__g_cores__BRA__3__KET____DOT__core__DOT__execute__DOT__tcu_unit__DOT__g_blocks__BRA__0__KET____DOT__tcu_fp__DOT__g_i__BRA__3__KET____DOT__g_j__BRA__1__KET____DOT__fedp__2\n"); );
+    // Init
+    SData/*8:0*/ __PVT__g_prod__BRA__2__KET____DOT__g_tf32_even__DOT__tf32_mul__DOT__g_in_ieee__DOT__from_ieee_a__DOT__adjustedExp;
+    __PVT__g_prod__BRA__2__KET____DOT__g_tf32_even__DOT__tf32_mul__DOT__g_in_ieee__DOT__from_ieee_a__DOT__adjustedExp = 0;
+    // Body
+    vlSelf->__VdfgTmp_hdc032bfa__0 = (0x3ffU & ((0U 
+                                                 == 
+                                                 (0xffU 
+                                                  & (vlSymsp->TOP.rtlsim_shim__DOT__vortex__DOT__g_clusters__BRA__0__KET____DOT__cluster__DOT__g_sockets__BRA__0__KET____DOT__socket__DOT__g_cores__BRA__3__KET____DOT__core__DOT__execute__DOT__tcu_unit__DOT__g_blocks__BRA__0__KET____DOT__tcu_fp__DOT__g_i__BRA__3__KET____DOT__g_j__BRA__1__KET____DOT_____05Fbuffer_ex141__DOT__g_shift_register__DOT__g_shift__DOT__pipe[4U] 
+                                                     >> 0x10U)))
+                                                 ? 
+                                                VL_SHIFTL_III(10,10,32, 
+                                                              (((vlSymsp->TOP.rtlsim_shim__DOT__vortex__DOT__g_clusters__BRA__0__KET____DOT__cluster__DOT__g_sockets__BRA__0__KET____DOT__socket__DOT__g_cores__BRA__3__KET____DOT__core__DOT__execute__DOT__tcu_unit__DOT__g_blocks__BRA__0__KET____DOT__tcu_fp__DOT__g_i__BRA__3__KET____DOT__g_j__BRA__1__KET____DOT_____05Fbuffer_ex141__DOT__g_shift_register__DOT__g_shift__DOT__pipe[4U] 
+                                                                 << 0x1aU) 
+                                                                | (vlSymsp->TOP.rtlsim_shim__DOT__vortex__DOT__g_clusters__BRA__0__KET____DOT__cluster__DOT__g_sockets__BRA__0__KET____DOT__socket__DOT__g_cores__BRA__3__KET____DOT__core__DOT__execute__DOT__tcu_unit__DOT__g_blocks__BRA__0__KET____DOT__tcu_fp__DOT__g_i__BRA__3__KET____DOT__g_j__BRA__1__KET____DOT_____05Fbuffer_ex141__DOT__g_shift_register__DOT__g_shift__DOT__pipe[4U] 
+                                                                   >> 6U)) 
+                                                               << 
+                                                               vlSelf->__PVT__g_prod__BRA__2__KET____DOT__g_tf32_even__DOT__tf32_mul__DOT__g_in_ieee__DOT__from_ieee_a__DOT__clz__DOT__lzc__DOT__g_lzc__DOT__find_first__DOT__d_n
+                                                               [0U]), 1U)
+                                                 : 
+                                                ((vlSymsp->TOP.rtlsim_shim__DOT__vortex__DOT__g_clusters__BRA__0__KET____DOT__cluster__DOT__g_sockets__BRA__0__KET____DOT__socket__DOT__g_cores__BRA__3__KET____DOT__core__DOT__execute__DOT__tcu_unit__DOT__g_blocks__BRA__0__KET____DOT__tcu_fp__DOT__g_i__BRA__3__KET____DOT__g_j__BRA__1__KET____DOT_____05Fbuffer_ex141__DOT__g_shift_register__DOT__g_shift__DOT__pipe[4U] 
+                                                  << 0x1aU) 
+                                                 | (vlSymsp->TOP.rtlsim_shim__DOT__vortex__DOT__g_clusters__BRA__0__KET____DOT__cluster__DOT__g_sockets__BRA__0__KET____DOT__socket__DOT__g_cores__BRA__3__KET____DOT__core__DOT__execute__DOT__tcu_unit__DOT__g_blocks__BRA__0__KET____DOT__tcu_fp__DOT__g_i__BRA__3__KET____DOT__g_j__BRA__1__KET____DOT_____05Fbuffer_ex141__DOT__g_shift_register__DOT__g_shift__DOT__pipe[4U] 
+                                                    >> 6U))));
+    __PVT__g_prod__BRA__2__KET____DOT__g_tf32_even__DOT__tf32_mul__DOT__g_in_ieee__DOT__from_ieee_a__DOT__adjustedExp 
+        = (0x1ffU & (((0U == (0xffU & (vlSymsp->TOP.rtlsim_shim__DOT__vortex__DOT__g_clusters__BRA__0__KET____DOT__cluster__DOT__g_sockets__BRA__0__KET____DOT__socket__DOT__g_cores__BRA__3__KET____DOT__core__DOT__execute__DOT__tcu_unit__DOT__g_blocks__BRA__0__KET____DOT__tcu_fp__DOT__g_i__BRA__3__KET____DOT__g_j__BRA__1__KET____DOT_____05Fbuffer_ex141__DOT__g_shift_register__DOT__g_shift__DOT__pipe[4U] 
+                                       >> 0x10U))) ? 
+                      (0x1f0U | (0xfU & (~ vlSelf->__PVT__g_prod__BRA__2__KET____DOT__g_tf32_even__DOT__tf32_mul__DOT__g_in_ieee__DOT__from_ieee_a__DOT__clz__DOT__lzc__DOT__g_lzc__DOT__find_first__DOT__d_n
+                                         [0U]))) : 
+                      (0xffU & (vlSymsp->TOP.rtlsim_shim__DOT__vortex__DOT__g_clusters__BRA__0__KET____DOT__cluster__DOT__g_sockets__BRA__0__KET____DOT__socket__DOT__g_cores__BRA__3__KET____DOT__core__DOT__execute__DOT__tcu_unit__DOT__g_blocks__BRA__0__KET____DOT__tcu_fp__DOT__g_i__BRA__3__KET____DOT__g_j__BRA__1__KET____DOT_____05Fbuffer_ex141__DOT__g_shift_register__DOT__g_shift__DOT__pipe[4U] 
+                                >> 0x10U))) + (0x80U 
+                                               | ((0U 
+                                                   == 
+                                                   (0xffU 
+                                                    & (vlSymsp->TOP.rtlsim_shim__DOT__vortex__DOT__g_clusters__BRA__0__KET____DOT__cluster__DOT__g_sockets__BRA__0__KET____DOT__socket__DOT__g_cores__BRA__3__KET____DOT__core__DOT__execute__DOT__tcu_unit__DOT__g_blocks__BRA__0__KET____DOT__tcu_fp__DOT__g_i__BRA__3__KET____DOT__g_j__BRA__1__KET____DOT_____05Fbuffer_ex141__DOT__g_shift_register__DOT__g_shift__DOT__pipe[4U] 
+                                                       >> 0x10U)))
+                                                   ? 2U
+                                                   : 1U))));
+    vlSelf->__VdfgTmp_h42bde904__0 = (7U & ((3U == 
+                                             (3U & 
+                                              ((IData)(__PVT__g_prod__BRA__2__KET____DOT__g_tf32_even__DOT__tf32_mul__DOT__g_in_ieee__DOT__from_ieee_a__DOT__adjustedExp) 
+                                               >> 7U)))
+                                             ? (6U 
+                                                | (0U 
+                                                   != 
+                                                   (0x3ffU 
+                                                    & (vlSymsp->TOP.rtlsim_shim__DOT__vortex__DOT__g_clusters__BRA__0__KET____DOT__cluster__DOT__g_sockets__BRA__0__KET____DOT__socket__DOT__g_cores__BRA__3__KET____DOT__core__DOT__execute__DOT__tcu_unit__DOT__g_blocks__BRA__0__KET____DOT__tcu_fp__DOT__g_i__BRA__3__KET____DOT__g_j__BRA__1__KET____DOT_____05Fbuffer_ex141__DOT__g_shift_register__DOT__g_shift__DOT__pipe[4U] 
+                                                       >> 6U))))
+                                             : ((IData)(
+                                                        (0U 
+                                                         == 
+                                                         (0xffffc0U 
+                                                          & vlSymsp->TOP.rtlsim_shim__DOT__vortex__DOT__g_clusters__BRA__0__KET____DOT__cluster__DOT__g_sockets__BRA__0__KET____DOT__socket__DOT__g_cores__BRA__3__KET____DOT__core__DOT__execute__DOT__tcu_unit__DOT__g_blocks__BRA__0__KET____DOT__tcu_fp__DOT__g_i__BRA__3__KET____DOT__g_j__BRA__1__KET____DOT_____05Fbuffer_ex141__DOT__g_shift_register__DOT__g_shift__DOT__pipe[4U])))
+                                                 ? 0U
+                                                 : 
+                                                ((IData)(__PVT__g_prod__BRA__2__KET____DOT__g_tf32_even__DOT__tf32_mul__DOT__g_in_ieee__DOT__from_ieee_a__DOT__adjustedExp) 
+                                                 >> 6U))));
+    vlSelf->__PVT__g_prod__BRA__2__KET____DOT__g_tf32_even__DOT__tf32_mul__DOT__multiplier__DOT__recFNToRawFN_a__DOT__exp 
+        = (((IData)(vlSelf->__VdfgTmp_h42bde904__0) 
+            << 6U) | (0x3fU & (IData)(__PVT__g_prod__BRA__2__KET____DOT__g_tf32_even__DOT__tf32_mul__DOT__g_in_ieee__DOT__from_ieee_a__DOT__adjustedExp)));
+    vlSelf->__PVT__g_prod__BRA__2__KET____DOT__g_tf32_even__DOT__tf32_mul__DOT__multiplier__DOT__isInfA 
+        = ((~ (IData)(vlSelf->__VdfgTmp_h42bde904__0)) 
+           & (3U == VL_SHIFTR_III(32,32,32, (IData)(vlSelf->__PVT__g_prod__BRA__2__KET____DOT__g_tf32_even__DOT__tf32_mul__DOT__multiplier__DOT__recFNToRawFN_a__DOT__exp), 7U)));
+}
+
+VL_ATTR_COLD void Vrtlsim_shim_VX_tcu_fedp_bhf__Ld_N2___stl_comb__TOP__rtlsim_shim__DOT__vortex__DOT__g_clusters__BRA__0__KET____DOT__cluster__DOT__g_sockets__BRA__0__KET____DOT__socket__DOT__g_cores__BRA__3__KET____DOT__core__DOT__execute__DOT__tcu_unit__DOT__g_blocks__BRA__0__KET____DOT__tcu_fp__DOT__g_i__BRA__3__KET____DOT__g_j__BRA__1__KET____DOT__fedp__3(Vrtlsim_shim_VX_tcu_fedp_bhf__Ld_N2* vlSelf) {
+    if (false && vlSelf) {}  // Prevent unused
+    Vrtlsim_shim__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
+    VL_DEBUG_IF(VL_DBG_MSGF("+                      Vrtlsim_shim_VX_tcu_fedp_bhf__Ld_N2___stl_comb__TOP__rtlsim_shim__DOT__vortex__DOT__g_clusters__BRA__0__KET____DOT__cluster__DOT__g_sockets__BRA__0__KET____DOT__socket__DOT__g_cores__BRA__3__KET____DOT__core__DOT__execute__DOT__tcu_unit__DOT__g_blocks__BRA__0__KET____DOT__tcu_fp__DOT__g_i__BRA__3__KET____DOT__g_j__BRA__1__KET____DOT__fedp__3\n"); );
+    // Init
+    SData/*8:0*/ __PVT__g_prod__BRA__0__KET____DOT__g_tf32_even__DOT__tf32_mul__DOT__g_in_ieee__DOT__from_ieee_b__DOT__adjustedExp;
+    __PVT__g_prod__BRA__0__KET____DOT__g_tf32_even__DOT__tf32_mul__DOT__g_in_ieee__DOT__from_ieee_b__DOT__adjustedExp = 0;
+    // Body
+    vlSelf->__VdfgTmp_h2ffd1d50__0 = (0x3ffU & ((0U 
+                                                 == 
+                                                 (0xffU 
+                                                  & (vlSymsp->TOP.rtlsim_shim__DOT__vortex__DOT__g_clusters__BRA__0__KET____DOT__cluster__DOT__g_sockets__BRA__0__KET____DOT__socket__DOT__g_cores__BRA__3__KET____DOT__core__DOT__execute__DOT__tcu_unit__DOT__g_blocks__BRA__0__KET____DOT__tcu_fp__DOT__g_i__BRA__3__KET____DOT__g_j__BRA__1__KET____DOT_____05Fbuffer_ex141__DOT__g_shift_register__DOT__g_shift__DOT__pipe[1U] 
+                                                     >> 0x10U)))
+                                                 ? 
+                                                VL_SHIFTL_III(10,10,32, 
+                                                              (((vlSymsp->TOP.rtlsim_shim__DOT__vortex__DOT__g_clusters__BRA__0__KET____DOT__cluster__DOT__g_sockets__BRA__0__KET____DOT__socket__DOT__g_cores__BRA__3__KET____DOT__core__DOT__execute__DOT__tcu_unit__DOT__g_blocks__BRA__0__KET____DOT__tcu_fp__DOT__g_i__BRA__3__KET____DOT__g_j__BRA__1__KET____DOT_____05Fbuffer_ex141__DOT__g_shift_register__DOT__g_shift__DOT__pipe[1U] 
+                                                                 << 0x1aU) 
+                                                                | (vlSymsp->TOP.rtlsim_shim__DOT__vortex__DOT__g_clusters__BRA__0__KET____DOT__cluster__DOT__g_sockets__BRA__0__KET____DOT__socket__DOT__g_cores__BRA__3__KET____DOT__core__DOT__execute__DOT__tcu_unit__DOT__g_blocks__BRA__0__KET____DOT__tcu_fp__DOT__g_i__BRA__3__KET____DOT__g_j__BRA__1__KET____DOT_____05Fbuffer_ex141__DOT__g_shift_register__DOT__g_shift__DOT__pipe[1U] 
+                                                                   >> 6U)) 
+                                                               << 
+                                                               vlSelf->__PVT__g_prod__BRA__0__KET____DOT__g_tf32_even__DOT__tf32_mul__DOT__g_in_ieee__DOT__from_ieee_b__DOT__clz__DOT__lzc__DOT__g_lzc__DOT__find_first__DOT__d_n
+                                                               [0U]), 1U)
+                                                 : 
+                                                ((vlSymsp->TOP.rtlsim_shim__DOT__vortex__DOT__g_clusters__BRA__0__KET____DOT__cluster__DOT__g_sockets__BRA__0__KET____DOT__socket__DOT__g_cores__BRA__3__KET____DOT__core__DOT__execute__DOT__tcu_unit__DOT__g_blocks__BRA__0__KET____DOT__tcu_fp__DOT__g_i__BRA__3__KET____DOT__g_j__BRA__1__KET____DOT_____05Fbuffer_ex141__DOT__g_shift_register__DOT__g_shift__DOT__pipe[1U] 
+                                                  << 0x1aU) 
+                                                 | (vlSymsp->TOP.rtlsim_shim__DOT__vortex__DOT__g_clusters__BRA__0__KET____DOT__cluster__DOT__g_sockets__BRA__0__KET____DOT__socket__DOT__g_cores__BRA__3__KET____DOT__core__DOT__execute__DOT__tcu_unit__DOT__g_blocks__BRA__0__KET____DOT__tcu_fp__DOT__g_i__BRA__3__KET____DOT__g_j__BRA__1__KET____DOT_____05Fbuffer_ex141__DOT__g_shift_register__DOT__g_shift__DOT__pipe[1U] 
+                                                    >> 6U))));
+    __PVT__g_prod__BRA__0__KET____DOT__g_tf32_even__DOT__tf32_mul__DOT__g_in_ieee__DOT__from_ieee_b__DOT__adjustedExp 
+        = (0x1ffU & (((0U == (0xffU & (vlSymsp->TOP.rtlsim_shim__DOT__vortex__DOT__g_clusters__BRA__0__KET____DOT__cluster__DOT__g_sockets__BRA__0__KET____DOT__socket__DOT__g_cores__BRA__3__KET____DOT__core__DOT__execute__DOT__tcu_unit__DOT__g_blocks__BRA__0__KET____DOT__tcu_fp__DOT__g_i__BRA__3__KET____DOT__g_j__BRA__1__KET____DOT_____05Fbuffer_ex141__DOT__g_shift_register__DOT__g_shift__DOT__pipe[1U] 
+                                       >> 0x10U))) ? 
+                      (0x1f0U | (0xfU & (~ vlSelf->__PVT__g_prod__BRA__0__KET____DOT__g_tf32_even__DOT__tf32_mul__DOT__g_in_ieee__DOT__from_ieee_b__DOT__clz__DOT__lzc__DOT__g_lzc__DOT__find_first__DOT__d_n
+                                         [0U]))) : 
+                      (0xffU & (vlSymsp->TOP.rtlsim_shim__DOT__vortex__DOT__g_clusters__BRA__0__KET____DOT__cluster__DOT__g_sockets__BRA__0__KET____DOT__socket__DOT__g_cores__BRA__3__KET____DOT__core__DOT__execute__DOT__tcu_unit__DOT__g_blocks__BRA__0__KET____DOT__tcu_fp__DOT__g_i__BRA__3__KET____DOT__g_j__BRA__1__KET____DOT_____05Fbuffer_ex141__DOT__g_shift_register__DOT__g_shift__DOT__pipe[1U] 
+                                >> 0x10U))) + (0x80U 
+                                               | ((0U 
+                                                   == 
+                                                   (0xffU 
+                                                    & (vlSymsp->TOP.rtlsim_shim__DOT__vortex__DOT__g_clusters__BRA__0__KET____DOT__cluster__DOT__g_sockets__BRA__0__KET____DOT__socket__DOT__g_cores__BRA__3__KET____DOT__core__DOT__execute__DOT__tcu_unit__DOT__g_blocks__BRA__0__KET____DOT__tcu_fp__DOT__g_i__BRA__3__KET____DOT__g_j__BRA__1__KET____DOT_____05Fbuffer_ex141__DOT__g_shift_register__DOT__g_shift__DOT__pipe[1U] 
+                                                       >> 0x10U)))
+                                                   ? 2U
+                                                   : 1U))));
+    vlSelf->__VdfgTmp_h96380549__0 = (7U & ((3U == 
+                                             (3U & 
+                                              ((IData)(__PVT__g_prod__BRA__0__KET____DOT__g_tf32_even__DOT__tf32_mul__DOT__g_in_ieee__DOT__from_ieee_b__DOT__adjustedExp) 
+                                               >> 7U)))
+                                             ? (6U 
+                                                | (0U 
+                                                   != 
+                                                   (0x3ffU 
+                                                    & (vlSymsp->TOP.rtlsim_shim__DOT__vortex__DOT__g_clusters__BRA__0__KET____DOT__cluster__DOT__g_sockets__BRA__0__KET____DOT__socket__DOT__g_cores__BRA__3__KET____DOT__core__DOT__execute__DOT__tcu_unit__DOT__g_blocks__BRA__0__KET____DOT__tcu_fp__DOT__g_i__BRA__3__KET____DOT__g_j__BRA__1__KET____DOT_____05Fbuffer_ex141__DOT__g_shift_register__DOT__g_shift__DOT__pipe[1U] 
+                                                       >> 6U))))
+                                             : ((IData)(
+                                                        (0U 
+                                                         == 
+                                                         (0xffffc0U 
+                                                          & vlSymsp->TOP.rtlsim_shim__DOT__vortex__DOT__g_clusters__BRA__0__KET____DOT__cluster__DOT__g_sockets__BRA__0__KET____DOT__socket__DOT__g_cores__BRA__3__KET____DOT__core__DOT__execute__DOT__tcu_unit__DOT__g_blocks__BRA__0__KET____DOT__tcu_fp__DOT__g_i__BRA__3__KET____DOT__g_j__BRA__1__KET____DOT_____05Fbuffer_ex141__DOT__g_shift_register__DOT__g_shift__DOT__pipe[1U])))
+                                                 ? 0U
+                                                 : 
+                                                ((IData)(__PVT__g_prod__BRA__0__KET____DOT__g_tf32_even__DOT__tf32_mul__DOT__g_in_ieee__DOT__from_ieee_b__DOT__adjustedExp) 
+                                                 >> 6U))));
+    vlSelf->__PVT__g_prod__BRA__0__KET____DOT__g_tf32_even__DOT__tf32_mul__DOT__multiplier__DOT__recFNToRawFN_b__DOT__exp 
+        = (((IData)(vlSelf->__VdfgTmp_h96380549__0) 
+            << 6U) | (0x3fU & (IData)(__PVT__g_prod__BRA__0__KET____DOT__g_tf32_even__DOT__tf32_mul__DOT__g_in_ieee__DOT__from_ieee_b__DOT__adjustedExp)));
+    vlSelf->__PVT__g_prod__BRA__0__KET____DOT__g_tf32_even__DOT__tf32_mul__DOT__multiplier__DOT__isInfB 
+        = ((~ (IData)(vlSelf->__VdfgTmp_h96380549__0)) 
+           & (3U == VL_SHIFTR_III(32,32,32, (IData)(vlSelf->__PVT__g_prod__BRA__0__KET____DOT__g_tf32_even__DOT__tf32_mul__DOT__multiplier__DOT__recFNToRawFN_b__DOT__exp), 7U)));
+}
+
+VL_ATTR_COLD void Vrtlsim_shim_VX_tcu_fedp_bhf__Ld_N2___stl_comb__TOP__rtlsim_shim__DOT__vortex__DOT__g_clusters__BRA__0__KET____DOT__cluster__DOT__g_sockets__BRA__0__KET____DOT__socket__DOT__g_cores__BRA__3__KET____DOT__core__DOT__execute__DOT__tcu_unit__DOT__g_blocks__BRA__0__KET____DOT__tcu_fp__DOT__g_i__BRA__3__KET____DOT__g_j__BRA__1__KET____DOT__fedp__4(Vrtlsim_shim_VX_tcu_fedp_bhf__Ld_N2* vlSelf) {
+    if (false && vlSelf) {}  // Prevent unused
+    Vrtlsim_shim__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
+    VL_DEBUG_IF(VL_DBG_MSGF("+                      Vrtlsim_shim_VX_tcu_fedp_bhf__Ld_N2___stl_comb__TOP__rtlsim_shim__DOT__vortex__DOT__g_clusters__BRA__0__KET____DOT__cluster__DOT__g_sockets__BRA__0__KET____DOT__socket__DOT__g_cores__BRA__3__KET____DOT__core__DOT__execute__DOT__tcu_unit__DOT__g_blocks__BRA__0__KET____DOT__tcu_fp__DOT__g_i__BRA__3__KET____DOT__g_j__BRA__1__KET____DOT__fedp__4\n"); );
+    // Init
+    SData/*8:0*/ __PVT__g_prod__BRA__2__KET____DOT__g_tf32_even__DOT__tf32_mul__DOT__g_in_ieee__DOT__from_ieee_b__DOT__adjustedExp;
+    __PVT__g_prod__BRA__2__KET____DOT__g_tf32_even__DOT__tf32_mul__DOT__g_in_ieee__DOT__from_ieee_b__DOT__adjustedExp = 0;
+    // Body
+    vlSelf->__VdfgTmp_he3a483a4__0 = (0x3ffU & ((0U 
+                                                 == 
+                                                 (0xffU 
+                                                  & (vlSymsp->TOP.rtlsim_shim__DOT__vortex__DOT__g_clusters__BRA__0__KET____DOT__cluster__DOT__g_sockets__BRA__0__KET____DOT__socket__DOT__g_cores__BRA__3__KET____DOT__core__DOT__execute__DOT__tcu_unit__DOT__g_blocks__BRA__0__KET____DOT__tcu_fp__DOT__g_i__BRA__3__KET____DOT__g_j__BRA__1__KET____DOT_____05Fbuffer_ex141__DOT__g_shift_register__DOT__g_shift__DOT__pipe[2U] 
+                                                     >> 0x10U)))
+                                                 ? 
+                                                VL_SHIFTL_III(10,10,32, 
+                                                              (((vlSymsp->TOP.rtlsim_shim__DOT__vortex__DOT__g_clusters__BRA__0__KET____DOT__cluster__DOT__g_sockets__BRA__0__KET____DOT__socket__DOT__g_cores__BRA__3__KET____DOT__core__DOT__execute__DOT__tcu_unit__DOT__g_blocks__BRA__0__KET____DOT__tcu_fp__DOT__g_i__BRA__3__KET____DOT__g_j__BRA__1__KET____DOT_____05Fbuffer_ex141__DOT__g_shift_register__DOT__g_shift__DOT__pipe[2U] 
+                                                                 << 0x1aU) 
+                                                                | (vlSymsp->TOP.rtlsim_shim__DOT__vortex__DOT__g_clusters__BRA__0__KET____DOT__cluster__DOT__g_sockets__BRA__0__KET____DOT__socket__DOT__g_cores__BRA__3__KET____DOT__core__DOT__execute__DOT__tcu_unit__DOT__g_blocks__BRA__0__KET____DOT__tcu_fp__DOT__g_i__BRA__3__KET____DOT__g_j__BRA__1__KET____DOT_____05Fbuffer_ex141__DOT__g_shift_register__DOT__g_shift__DOT__pipe[2U] 
+                                                                   >> 6U)) 
+                                                               << 
+                                                               vlSelf->__PVT__g_prod__BRA__2__KET____DOT__g_tf32_even__DOT__tf32_mul__DOT__g_in_ieee__DOT__from_ieee_b__DOT__clz__DOT__lzc__DOT__g_lzc__DOT__find_first__DOT__d_n
+                                                               [0U]), 1U)
+                                                 : 
+                                                ((vlSymsp->TOP.rtlsim_shim__DOT__vortex__DOT__g_clusters__BRA__0__KET____DOT__cluster__DOT__g_sockets__BRA__0__KET____DOT__socket__DOT__g_cores__BRA__3__KET____DOT__core__DOT__execute__DOT__tcu_unit__DOT__g_blocks__BRA__0__KET____DOT__tcu_fp__DOT__g_i__BRA__3__KET____DOT__g_j__BRA__1__KET____DOT_____05Fbuffer_ex141__DOT__g_shift_register__DOT__g_shift__DOT__pipe[2U] 
+                                                  << 0x1aU) 
+                                                 | (vlSymsp->TOP.rtlsim_shim__DOT__vortex__DOT__g_clusters__BRA__0__KET____DOT__cluster__DOT__g_sockets__BRA__0__KET____DOT__socket__DOT__g_cores__BRA__3__KET____DOT__core__DOT__execute__DOT__tcu_unit__DOT__g_blocks__BRA__0__KET____DOT__tcu_fp__DOT__g_i__BRA__3__KET____DOT__g_j__BRA__1__KET____DOT_____05Fbuffer_ex141__DOT__g_shift_register__DOT__g_shift__DOT__pipe[2U] 
+                                                    >> 6U))));
+    __PVT__g_prod__BRA__2__KET____DOT__g_tf32_even__DOT__tf32_mul__DOT__g_in_ieee__DOT__from_ieee_b__DOT__adjustedExp 
+        = (0x1ffU & (((0U == (0xffU & (vlSymsp->TOP.rtlsim_shim__DOT__vortex__DOT__g_clusters__BRA__0__KET____DOT__cluster__DOT__g_sockets__BRA__0__KET____DOT__socket__DOT__g_cores__BRA__3__KET____DOT__core__DOT__execute__DOT__tcu_unit__DOT__g_blocks__BRA__0__KET____DOT__tcu_fp__DOT__g_i__BRA__3__KET____DOT__g_j__BRA__1__KET____DOT_____05Fbuffer_ex141__DOT__g_shift_register__DOT__g_shift__DOT__pipe[2U] 
+                                       >> 0x10U))) ? 
+                      (0x1f0U | (0xfU & (~ vlSelf->__PVT__g_prod__BRA__2__KET____DOT__g_tf32_even__DOT__tf32_mul__DOT__g_in_ieee__DOT__from_ieee_b__DOT__clz__DOT__lzc__DOT__g_lzc__DOT__find_first__DOT__d_n
+                                         [0U]))) : 
+                      (0xffU & (vlSymsp->TOP.rtlsim_shim__DOT__vortex__DOT__g_clusters__BRA__0__KET____DOT__cluster__DOT__g_sockets__BRA__0__KET____DOT__socket__DOT__g_cores__BRA__3__KET____DOT__core__DOT__execute__DOT__tcu_unit__DOT__g_blocks__BRA__0__KET____DOT__tcu_fp__DOT__g_i__BRA__3__KET____DOT__g_j__BRA__1__KET____DOT_____05Fbuffer_ex141__DOT__g_shift_register__DOT__g_shift__DOT__pipe[2U] 
+                                >> 0x10U))) + (0x80U 
+                                               | ((0U 
+                                                   == 
+                                                   (0xffU 
+                                                    & (vlSymsp->TOP.rtlsim_shim__DOT__vortex__DOT__g_clusters__BRA__0__KET____DOT__cluster__DOT__g_sockets__BRA__0__KET____DOT__socket__DOT__g_cores__BRA__3__KET____DOT__core__DOT__execute__DOT__tcu_unit__DOT__g_blocks__BRA__0__KET____DOT__tcu_fp__DOT__g_i__BRA__3__KET____DOT__g_j__BRA__1__KET____DOT_____05Fbuffer_ex141__DOT__g_shift_register__DOT__g_shift__DOT__pipe[2U] 
+                                                       >> 0x10U)))
+                                                   ? 2U
+                                                   : 1U))));
+    vlSelf->__VdfgTmp_h3491cac1__0 = (7U & ((3U == 
+                                             (3U & 
+                                              ((IData)(__PVT__g_prod__BRA__2__KET____DOT__g_tf32_even__DOT__tf32_mul__DOT__g_in_ieee__DOT__from_ieee_b__DOT__adjustedExp) 
+                                               >> 7U)))
+                                             ? (6U 
+                                                | (0U 
+                                                   != 
+                                                   (0x3ffU 
+                                                    & (vlSymsp->TOP.rtlsim_shim__DOT__vortex__DOT__g_clusters__BRA__0__KET____DOT__cluster__DOT__g_sockets__BRA__0__KET____DOT__socket__DOT__g_cores__BRA__3__KET____DOT__core__DOT__execute__DOT__tcu_unit__DOT__g_blocks__BRA__0__KET____DOT__tcu_fp__DOT__g_i__BRA__3__KET____DOT__g_j__BRA__1__KET____DOT_____05Fbuffer_ex141__DOT__g_shift_register__DOT__g_shift__DOT__pipe[2U] 
+                                                       >> 6U))))
+                                             : ((IData)(
+                                                        (0U 
+                                                         == 
+                                                         (0xffffc0U 
+                                                          & vlSymsp->TOP.rtlsim_shim__DOT__vortex__DOT__g_clusters__BRA__0__KET____DOT__cluster__DOT__g_sockets__BRA__0__KET____DOT__socket__DOT__g_cores__BRA__3__KET____DOT__core__DOT__execute__DOT__tcu_unit__DOT__g_blocks__BRA__0__KET____DOT__tcu_fp__DOT__g_i__BRA__3__KET____DOT__g_j__BRA__1__KET____DOT_____05Fbuffer_ex141__DOT__g_shift_register__DOT__g_shift__DOT__pipe[2U])))
+                                                 ? 0U
+                                                 : 
+                                                ((IData)(__PVT__g_prod__BRA__2__KET____DOT__g_tf32_even__DOT__tf32_mul__DOT__g_in_ieee__DOT__from_ieee_b__DOT__adjustedExp) 
+                                                 >> 6U))));
+    vlSelf->__PVT__g_prod__BRA__2__KET____DOT__g_tf32_even__DOT__tf32_mul__DOT__multiplier__DOT__recFNToRawFN_b__DOT__exp 
+        = (((IData)(vlSelf->__VdfgTmp_h3491cac1__0) 
+            << 6U) | (0x3fU & (IData)(__PVT__g_prod__BRA__2__KET____DOT__g_tf32_even__DOT__tf32_mul__DOT__g_in_ieee__DOT__from_ieee_b__DOT__adjustedExp)));
+    vlSelf->__PVT__g_prod__BRA__2__KET____DOT__g_tf32_even__DOT__tf32_mul__DOT__multiplier__DOT__isInfB 
+        = ((~ (IData)(vlSelf->__VdfgTmp_h3491cac1__0)) 
+           & (3U == VL_SHIFTR_III(32,32,32, (IData)(vlSelf->__PVT__g_prod__BRA__2__KET____DOT__g_tf32_even__DOT__tf32_mul__DOT__multiplier__DOT__recFNToRawFN_b__DOT__exp), 7U)));
+}

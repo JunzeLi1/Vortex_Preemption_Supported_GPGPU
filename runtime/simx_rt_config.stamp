@@ -1,0 +1,1 @@
+-std=c++17 -Wall -Wextra -Wfatal-errors -fPIC -Wno-maybe-uninitialized -I/home/andyl/vortex/runtime/include -I../common -I/home/andyl/vortex/hw -I/home/andyl/vortex/sim/simx -I/home/andyl/vortex/sim/common -I/home/andyl/vortex/runtime/common -DXLEN_32  -g -O0
